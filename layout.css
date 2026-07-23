@@ -1,3 +1,27 @@
+html {
+    background:var(--void);
+}
+
 body {
-    background:red!important;
+    background:var(--void)!important;
+    color:var(--light)!important;
+}
+
+.l-page,
+.p-profiles,
+.p-profiles-show {
+    background:transparent!important;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+a {
+    color:var(--cold)!important;
+    transition:.4s ease;
+}
+
+a:hover {
+    color:white!important;
 }
