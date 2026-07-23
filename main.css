@@ -1,12 +1,12 @@
 /*
-    THRESHOLD BACKGROUND TEST 3
+    THRESHOLD BACKGROUND TEST 4
 */
 
 #profiles_show {
-    background-image:
-        url("https://picsum.photos/1920/1080")!important;
-
-    background-size:cover!important;
+    background-image:url("https://picsum.photos/1920/1080")!important;
+    background-color:transparent!important;
+    background-size:100% 100%!important;
     background-position:center!important;
     background-repeat:no-repeat!important;
+    min-height:100vh!important;
 }
