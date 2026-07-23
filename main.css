@@ -98,3 +98,12 @@ body::after {
 .p-profiles-show {
     animation:threshold-breathe 8s infinite alternate;
 }
+/* SHIKIMORI BACKGROUND OVERRIDE */
+
+body,
+.l-page,
+.l-wrapper,
+.p-profiles-show,
+.p-profiles {
+    background:#07090d!important;
+}
