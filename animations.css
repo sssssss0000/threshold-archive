@@ -1,0 +1,13 @@
+@keyframes threshold-breathe {
+    0% {
+        opacity:.8;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+.threshold-breathe {
+    animation:threshold-breathe 8s infinite alternate;
+}
