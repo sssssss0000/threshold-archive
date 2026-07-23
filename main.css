@@ -157,3 +157,53 @@ body {
     border-color:rgba(195,208,226,.18)!important;
     transform:translateY(-2px);
 }
+/*
+    THRESHOLD AVATAR
+*/
+
+.profile-head .avatar {
+    position:relative;
+}
+
+.profile-head .avatar img {
+    border-radius:50%!important;
+    border:1px solid rgba(195,208,226,.25)!important;
+    box-shadow:
+        0 0 25px rgba(120,150,200,.15),
+        inset 0 0 20px rgba(255,255,255,.05);
+    filter:saturate(.9);
+    transition:.5s ease;
+}
+
+.profile-head .avatar img:hover {
+    filter:saturate(1);
+    box-shadow:
+        0 0 40px rgba(120,150,200,.3);
+}
+.profile-head h1.aliases {
+    font-family:"Inter",sans-serif!important;
+    font-weight:300!important;
+    letter-spacing:.12em;
+    text-transform:lowercase;
+    color:#edf2fa!important;
+}
+.profile-head .notice {
+    font-family:"JetBrains Mono",monospace!important;
+    font-size:11px!important;
+    letter-spacing:.08em;
+    opacity:.65;
+    text-transform:uppercase;
+}
+
+.profile-head .notice span {
+    color:#c3d0e2!important;
+}
+.profile-head .c-history {
+    opacity:.8;
+}
+
+.profile-head .c-history .entry {
+    border-bottom:1px solid rgba(255,255,255,.05);
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
