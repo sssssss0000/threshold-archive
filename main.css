@@ -1,11 +1,3 @@
-/*
-    THRESHOLD ARCHIVE
-    ENTRY 001
-
-    A profile between dream and reality.
-*/
-
-@import url("https://sssssss0000.github.io/threshold-archive/colors.css");
-@import url("https://sssssss0000.github.io/threshold-archive/fonts.css");
-@import url("https://sssssss0000.github.io/threshold-archive/layout.css");
-@import url("https://sssssss0000.github.io/threshold-archive/animations.css");
+body {
+    background:blue!important;
+}
