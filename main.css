@@ -237,3 +237,64 @@ small,
 .p-profiles-show {
     animation:threshold-breathe 8s infinite alternate;
 }
+/*
+    PROFILE IDENTITY MODULE
+*/
+
+.profile-head .c-brief {
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+
+.profile-head .head {
+    position:relative;
+}
+
+
+.profile-head .head::before {
+    content:"ENTRY 001";
+    display:block;
+    margin-bottom:12px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;
+    letter-spacing:.25em;
+    color:rgba(195,208,226,.45);
+}
+
+
+.profile-head .head::after {
+    content:"SIGNAL // ONLINE";
+    display:block;
+    margin-top:14px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;
+    letter-spacing:.2em;
+    color:rgba(195,208,226,.35);
+}
+
+
+.profile-head h1.aliases {
+    margin-bottom:12px!important;
+    font-size:32px!important;
+}
+
+
+.profile-head .notice {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 16px;
+}
+
+
+.profile-head .notice span {
+    position:relative;
+}
+
+
+.profile-head .notice span:not(:last-child)::after {
+    content:"/";
+    margin-left:16px;
+    opacity:.3;
+}
