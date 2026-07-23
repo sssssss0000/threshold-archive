@@ -1,0 +1,13 @@
+:root {
+    --void:#07090d;
+    --abyss:#0b1017;
+    --surface:#121923;
+    --surface-soft:rgba(18,25,35,.72);
+
+    --mist:#657386;
+    --cold:#b8c5d8;
+    --light:#e7edf7;
+
+    --line:rgba(184,197,216,.12);
+    --glow:rgba(130,160,200,.15);
+}
