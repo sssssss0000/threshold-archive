@@ -1,19 +1,12 @@
 /*
-    THRESHOLD ARCHIVE
-    BACKGROUND TEST 2
+    THRESHOLD BACKGROUND TEST 3
 */
 
-html,
-body {
-    background:#07090d!important;
-}
+#profiles_show {
+    background-image:
+        url("https://picsum.photos/1920/1080")!important;
 
-
-.l-page,
-.l-wrapper,
-.p-profiles,
-.p-profiles-show {
-    background-image:url("https://picsum.photos/1920/1080")!important;
     background-size:cover!important;
     background-position:center!important;
+    background-repeat:no-repeat!important;
 }
