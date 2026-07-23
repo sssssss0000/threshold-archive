@@ -107,3 +107,21 @@ body,
 .p-profiles {
     background:#07090d!important;
 }
+/*
+    THRESHOLD BACKGROUND
+*/
+
+body {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(120,145,180,.12),
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 50% 100%,
+            rgba(50,70,100,.08),
+            transparent 50%
+        ),
+        #07090d!important;
+}
