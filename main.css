@@ -398,3 +398,93 @@ small,
     opacity:.5;
     text-transform:uppercase;
 }
+/*
+    THRESHOLD MEMORY ARCHIVE
+*/
+
+
+.profile-head .c-history {
+    background:rgba(18,25,35,.45)!important;
+    border:1px solid rgba(195,208,226,.08)!important;
+    border-radius:8px!important;
+    padding:20px!important;
+}
+
+
+.profile-head .c-history .subheadline {
+    margin-bottom:20px!important;
+}
+
+
+.profile-head .c-history .subheadline a {
+    font-family:"JetBrains Mono",monospace!important;
+    font-size:11px!important;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+    color:rgba(195,208,226,.55)!important;
+}
+
+
+/*
+    HISTORY ENTRIES
+*/
+
+
+.profile-head .c-history .entry {
+    padding:12px 0!important;
+    margin:0!important;
+    border-bottom:1px solid rgba(255,255,255,.05)!important;
+}
+
+
+.profile-head .c-history .entry:last-child {
+    border-bottom:none!important;
+}
+
+
+.profile-head .c-history .entry .image-name {
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.profile-head .c-history .entry img {
+    width:45px!important;
+    height:65px!important;
+    object-fit:cover;
+    filter:saturate(.8);
+    opacity:.85;
+    transition:.4s ease;
+}
+
+
+.profile-head .c-history .entry:hover img {
+    filter:saturate(1);
+    opacity:1;
+}
+
+
+.profile-head .c-history .entry .title {
+    font-family:"Inter",sans-serif!important;
+}
+
+
+.profile-head .c-history .entry .name-en {
+    color:#edf2fa!important;
+    letter-spacing:.04em;
+}
+
+
+.profile-head .c-history .entry .name-ru {
+    opacity:.45;
+    font-size:12px!important;
+}
+
+
+.profile-head .c-history .misc {
+    font-family:"JetBrains Mono",monospace!important;
+    font-size:10px!important;
+    letter-spacing:.08em;
+    opacity:.5;
+}
