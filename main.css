@@ -1,8 +1,6 @@
-@import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/colors.css");
-@import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/fonts.css");
-@import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/layout.css");
-@import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/animations.css");
-
-body {
+body,
+body::before,
+.l-page,
+.p-profiles-show {
     background:red!important;
 }
