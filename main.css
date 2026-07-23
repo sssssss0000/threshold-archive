@@ -9,3 +9,6 @@
 @import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/fonts.css");
 @import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/layout.css");
 @import url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/animations.css");
+body {
+    background:red!important;
+}
