@@ -298,3 +298,103 @@ small,
     margin-left:16px;
     opacity:.3;
 }
+/*
+    THRESHOLD DATABASE MODULE
+*/
+
+
+.c-info {
+    padding:25px!important;
+}
+
+
+.c-lists-info .title {
+    font-family:"JetBrains Mono",monospace!important;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    font-size:11px!important;
+    color:rgba(195,208,226,.55)!important;
+}
+
+
+.b-stats_bar.anime {
+    background:transparent!important;
+    border:none!important;
+}
+
+
+/*
+    REMOVE ORIGINAL BAR STYLE
+*/
+
+.b-stats_bar .bar {
+    height:3px!important;
+    background:rgba(195,208,226,.08)!important;
+    border-radius:0!important;
+    overflow:hidden;
+}
+
+
+.b-stats_bar .bar div {
+    opacity:.7;
+}
+
+
+.b-stats_bar .first,
+.b-stats_bar .second,
+.b-stats_bar .third {
+    background:#9eb3d0!important;
+}
+
+
+/*
+    STAT GRID
+*/
+
+.stat_names {
+    display:grid!important;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+
+.stat_name {
+    text-align:center;
+}
+
+
+.stat_name a {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+
+.stat_name .size {
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px;
+    color:#edf2fa!important;
+    order:-1;
+}
+
+
+.stat_name a {
+    font-size:10px!important;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    color:rgba(195,208,226,.55)!important;
+}
+
+
+/*
+    COMPATIBILITY
+*/
+
+.compatibility {
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;
+    letter-spacing:.15em;
+    opacity:.5;
+    text-transform:uppercase;
+}
