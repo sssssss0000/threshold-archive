@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 51
+ENTRY 53
 */
 
 #profiles_show {
@@ -13,8 +13,8 @@ ENTRY 51
     inset:0;
     background:
         linear-gradient(
-            rgba(5,8,14,.5),
-            rgba(5,8,14,.85)
+            rgba(5,8,14,.45),
+            rgba(5,8,14,.82)
         ),
         url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
     background-size:cover;
@@ -38,20 +38,19 @@ body {
 
 .avatar img {
     border-radius:14px!important;
-    filter:grayscale(.2) contrast(1.05);
+    filter:grayscale(.15) contrast(1.05);
     opacity:.92;
 }
 
 .c-brief .head h1 {
     color:#f2f6ff!important;
-    letter-spacing:.22em;
+    letter-spacing:.18em;
     font-weight:600;
 }
 
 .notice {
-    color:#91a2ba!important;
+    color:#98a8bd!important;
     opacity:.8;
-    letter-spacing:.05em;
 }
 
 .notice a {
@@ -61,7 +60,7 @@ body {
 .c-history .subheadline {
     color:#e8effb!important;
     text-transform:uppercase;
-    letter-spacing:.2em;
+    letter-spacing:.18em;
     font-size:11px;
 }
 
@@ -79,9 +78,9 @@ body {
 
 .c-additionals b {
     color:#e8effb!important;
-    font-size:11px;
-    letter-spacing:.2em;
     text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:11px;
 }
 
 .c-additionals a {
