@@ -1,6 +1,6 @@
 /*
     THRESHOLD ARCHIVE
-    IMAGE TEST
+    ENTRY 001
 */
 
 
@@ -16,14 +16,16 @@
 
     position:fixed;
 
-    top:0;
-    left:0;
-
-    width:100vw;
-    height:100vh;
+    inset:0;
 
 
-    background-image:url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
+    background-image:
+        linear-gradient(
+            rgba(5,8,14,.45),
+            rgba(5,8,14,.75)
+        ),
+        url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
+
 
     background-size:cover!important;
     background-position:center!important;
@@ -37,12 +39,9 @@
 }
 
 
-/* профиль поверх картинки */
-
 #profiles_show > * {
 
     position:relative!important;
-
     z-index:1!important;
 
 }
