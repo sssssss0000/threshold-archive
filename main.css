@@ -1,127 +1,154 @@
 /*
     THRESHOLD ARCHIVE
-    ENTRY 42
+    ENTRY 43
 
     A profile between dream and reality.
 */
 
 
-/* =========================
-   BACKGROUND
-========================= */
-
-
 #profiles_show {
-
     background:#05080e!important;
-
 }
 
 
-
 #profiles_show::before {
-
     content:"";
-
     position:fixed;
-
     top:0;
     left:0;
-
     width:100vw;
     height:100vh;
-
-
     background-image:
         linear-gradient(
             rgba(5,8,14,.45),
             rgba(5,8,14,.75)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
-
-
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
-
     z-index:-1;
-
     pointer-events:none;
-
 }
-
-
-
-/* =========================
-   COLORS
-========================= */
 
 
 body {
-
-    color:#edf2fa!important;
-
+    color:#dce6f5!important;
 }
 
 
+/* PROFILE HEADER */
 
-/* =========================
-   PROFILE BLOCKS
-========================= */
-
-
-.c-brief,
-.c-history,
-.c-info {
-
-    background:
-        rgba(10,14,22,.55)!important;
-
-
-    border:
-        1px solid
-        rgba(190,210,240,.08)!important;
-
+.c-brief {
+    background:rgba(10,14,22,.75)!important;
+    border:1px solid rgba(190,210,240,.12)!important;
 }
 
 
-
-/* =========================
-   AVATAR
-========================= */
-
-
-.avatar img {
-
-    border-radius:18px!important;
-
-    filter:
-        grayscale(.15)
-        contrast(1.05);
-
+.c-brief .head h1 {
+    color:#edf3ff!important;
+    letter-spacing:.12em;
 }
-
-
-
-/* =========================
-   TEXT
-========================= */
-
-
-h1,
-.title {
-
-    letter-spacing:.08em;
-
-}
-
 
 
 .notice {
+    color:#9daabd!important;
+}
 
-    opacity:.65;
 
+/* AVATAR */
+
+.avatar img {
+    border-radius:12px!important;
+    filter:
+        grayscale(.15)
+        contrast(1.05);
+}
+
+
+/* HISTORY */
+
+.c-history {
+    background:rgba(10,14,22,.65)!important;
+    border:1px solid rgba(190,210,240,.1)!important;
+}
+
+
+.c-history .subheadline {
+    color:#edf3ff!important;
+    letter-spacing:.1em;
+}
+
+
+.c-history .entry {
+    border-bottom:1px solid rgba(190,210,240,.08)!important;
+}
+
+
+.c-history .entry:last-child {
+    border-bottom:none!important;
+}
+
+
+.c-history .title {
+    color:#dce6f5!important;
+}
+
+
+/* STATS PANEL */
+
+.c-info {
+    background:rgba(10,14,22,.65)!important;
+    border:1px solid rgba(190,210,240,.1)!important;
+}
+
+
+.b-stats_bar {
+    background:rgba(255,255,255,.04)!important;
+    border-radius:4px!important;
+    overflow:hidden!important;
+}
+
+
+.b-stats_bar .first,
+.b-stats_bar .second,
+.b-stats_bar .third {
+    height:8px!important;
+}
+
+
+.b-stats_bar .first {
+    background:#6578a8!important;
+}
+
+
+.b-stats_bar .second {
+    background:#384968!important;
+}
+
+
+.b-stats_bar .third {
+    background:#1d2738!important;
+}
+
+
+.stat_names {
+    color:#9daabd!important;
+}
+
+
+.stat_name a {
+    color:#cfd9ea!important;
+}
+
+
+/* LINKS */
+
+a {
+    color:#b7c9e8!important;
+}
+
+
+a:hover {
+    color:#ffffff!important;
 }
