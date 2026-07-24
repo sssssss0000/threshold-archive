@@ -1,12 +1,139 @@
 /*
-    THRESHOLD BACKGROUND TEST 4
+    THRESHOLD ARCHIVE
+    ENTRY 001
+
+    A profile between dream and reality.
 */
 
+
+/* =========================
+   BACKGROUND SYSTEM
+========================= */
+
+
 #profiles_show {
-    background-image:url("https://picsum.photos/1920/1080")!important;
-    background-color:transparent!important;
-    background-size:100% 100%!important;
+    position:relative!important;
+
+    background:
+        linear-gradient(
+            rgba(5,8,14,.78),
+            rgba(5,8,14,.92)
+        ),
+        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
+
+    background-size:cover!important;
     background-position:center!important;
     background-repeat:no-repeat!important;
+
     min-height:100vh!important;
+}
+
+
+/* =========================
+   DECORATION LAYER
+========================= */
+
+
+#profiles_show::before {
+    content:"";
+
+    position:fixed;
+
+    top:0;
+    right:0;
+
+    width:450px;
+    height:450px;
+
+    background:url("https://sssssss0000.github.io/threshold-archive/assets/decoration.jpg");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:right top;
+
+    opacity:.35;
+
+    pointer-events:none;
+
+    z-index:2;
+}
+
+
+/* =========================
+   CONTENT ABOVE LAYERS
+========================= */
+
+
+#profiles_show > * {
+    position:relative;
+    z-index:3;
+}
+
+
+/* =========================
+   GLOBAL COLORS
+========================= */
+
+
+body {
+    background:#05080e!important;
+    color:#edf2fa!important;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+
+.c-brief,
+.c-history,
+.c-info {
+
+    background:
+    rgba(10,14,22,.65)!important;
+
+    border:
+
+    1px solid
+    rgba(190,210,240,.08)!important;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+
+.avatar img {
+
+    border-radius:18px!important;
+
+    filter:
+    grayscale(.2)
+    contrast(1.05);
+
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+
+h1,
+.title {
+
+    letter-spacing:.08em;
+
+}
+
+
+.notice {
+
+    opacity:.65;
+
 }
