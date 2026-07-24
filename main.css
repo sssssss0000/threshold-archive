@@ -1,9 +1,8 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 47
+ENTRY 48
 */
 
-/* background */
 #profiles_show {
     background:#05080e!important;
 }
@@ -15,7 +14,7 @@ ENTRY 47
     background:
         linear-gradient(
             rgba(5,8,14,.45),
-            rgba(5,8,14,.8)
+            rgba(5,8,14,.82)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
     background-size:cover;
@@ -25,12 +24,11 @@ ENTRY 47
     pointer-events:none;
 }
 
-/* base */
 body {
     color:#dce6f5!important;
 }
 
-/* remove heavy cards */
+/* remove cards */
 .c-brief,
 .c-history,
 .c-info {
@@ -38,70 +36,115 @@ body {
     border:none!important;
 }
 
-/* avatar */
+/* profile header */
+.c-brief {
+    padding-bottom:20px!important;
+}
+
 .avatar img {
     border-radius:14px!important;
     filter:grayscale(.15) contrast(1.05);
+    opacity:.92;
 }
 
-/* nickname */
 .c-brief .head h1 {
-    color:#eef4ff!important;
-    letter-spacing:.15em;
+    color:#f0f4ff!important;
+    letter-spacing:.18em;
     font-weight:600;
+    text-transform:lowercase;
 }
 
-/* profile data */
 .notice {
-    color:#9aa9bf!important;
-    opacity:.8;
+    color:#9baac0!important;
+    opacity:.75;
+    letter-spacing:.04em;
+}
+
+/* subtle separators */
+.c-history,
+.c-info {
+    position:relative;
+}
+
+.c-history::before,
+.c-info::before,
+.c-brief::after {
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background:rgba(190,215,245,.12);
+    margin:18px 0;
 }
 
 /* history */
 .c-history .subheadline {
-    color:#eef4ff!important;
-    letter-spacing:.12em;
+    color:#e6edf9!important;
+    letter-spacing:.18em;
     text-transform:uppercase;
+    font-size:12px;
 }
 
 .c-history .entry {
-    border-bottom:1px solid rgba(200,220,255,.08)!important;
+    padding:10px 0!important;
+    border-bottom:1px solid rgba(190,215,245,.06)!important;
 }
 
 .c-history .entry:last-child {
-    border:none!important;
+    border-bottom:none!important;
 }
 
-/* stats line */
+.c-history .title {
+    color:#dbe6f7!important;
+}
+
+.c-history .misc {
+    color:#7f90aa!important;
+}
+
+/* stats */
 .b-stats_bar {
+    height:5px!important;
     background:rgba(255,255,255,.05)!important;
-    height:6px!important;
-    border-radius:10px!important;
-    overflow:hidden;
+    border-radius:20px!important;
+    overflow:hidden!important;
 }
 
 .b-stats_bar .first {
-    background:#758bb8!important;
+    background:#8a9bc4!important;
 }
 
 .b-stats_bar .second {
-    background:#465673!important;
+    background:#556781!important;
 }
 
 .b-stats_bar .third {
-    background:#222c40!important;
+    background:#283448!important;
 }
 
-/* stat text */
+.stat_names {
+    margin-top:12px!important;
+}
+
 .stat_name a {
-    color:#b8c7df!important;
+    color:#aebdd3!important;
+    letter-spacing:.04em;
 }
 
 /* links */
 a {
-    color:#b9cae8!important;
+    color:#b8c9e8!important;
 }
 
 a:hover {
-    color:white!important;
+    color:#ffffff!important;
+}
+
+/* profile actions */
+.profile-actions a {
+    opacity:.65;
+}
+
+.profile-actions a:hover {
+    opacity:1;
 }
