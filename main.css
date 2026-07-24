@@ -1,18 +1,31 @@
 /*
-    THRESHOLD ARCHIVE
-    IMAGE TEST
+    THRESHOLD IMAGE DEBUG
 */
 
-
 #profiles_show {
+    background:#ff0000!important;
+}
 
-    background-image:
-        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
 
-    background-size:cover!important;
+#profiles_show::before {
 
-    background-position:center!important;
+    content:"";
 
-    background-repeat:no-repeat!important;
+    position:fixed;
 
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    background-image:url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    z-index:9999;
+
+    pointer-events:none;
 }
