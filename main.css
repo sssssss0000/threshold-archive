@@ -10,14 +10,13 @@
    BACKGROUND SYSTEM
 ========================= */
 
-
 #profiles_show {
     position:relative!important;
 
     background:
         linear-gradient(
-            rgba(5,8,14,.78),
-            rgba(5,8,14,.92)
+            rgba(5,8,14,.35),
+            rgba(5,8,14,.65)
         ),
         url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
 
@@ -30,9 +29,8 @@
 
 
 /* =========================
-   DECORATION LAYER
+   DECORATION
 ========================= */
-
 
 #profiles_show::before {
     content:"";
@@ -45,7 +43,8 @@
     width:450px;
     height:450px;
 
-    background:url("https://sssssss0000.github.io/threshold-archive/assets/decoration.jpg");
+    background:
+        url("https://sssssss0000.github.io/threshold-archive/assets/decoration.jpg");
 
     background-size:contain;
     background-repeat:no-repeat;
@@ -60,9 +59,8 @@
 
 
 /* =========================
-   CONTENT ABOVE LAYERS
+   CONTENT LAYER
 ========================= */
-
 
 #profiles_show > * {
     position:relative;
@@ -71,9 +69,8 @@
 
 
 /* =========================
-   GLOBAL COLORS
+   BASE COLORS
 ========================= */
-
 
 body {
     background:#05080e!important;
@@ -82,21 +79,19 @@ body {
 
 
 /* =========================
-   PROFILE CARD
+   PROFILE BLOCKS
 ========================= */
-
 
 .c-brief,
 .c-history,
 .c-info {
 
     background:
-    rgba(10,14,22,.65)!important;
+        rgba(10,14,22,.65)!important;
 
     border:
-
-    1px solid
-    rgba(190,210,240,.08)!important;
+        1px solid
+        rgba(190,210,240,.08)!important;
 
     backdrop-filter:blur(8px);
 
@@ -107,22 +102,20 @@ body {
    AVATAR
 ========================= */
 
-
 .avatar img {
 
     border-radius:18px!important;
 
     filter:
-    grayscale(.2)
-    contrast(1.05);
+        grayscale(.15)
+        contrast(1.05);
 
 }
 
 
 /* =========================
-   TYPOGRAPHY
+   TEXT
 ========================= */
-
 
 h1,
 .title {
