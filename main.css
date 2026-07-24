@@ -1,13 +1,24 @@
 /*
     THRESHOLD ARCHIVE
-    ENTRY 001
+    ENTRY 030
+
+    A profile between dream and reality.
 */
 
 
+/* =========================
+   BACKGROUND
+========================= */
+
+
 #profiles_show {
+
     position:relative!important;
+
     background:#05080e!important;
+
 }
+
 
 
 #profiles_show::before {
@@ -21,14 +32,16 @@
 
     background-image:
         linear-gradient(
-            rgba(5,8,14,.45),
-            rgba(5,8,14,.75)
+            rgba(5,8,14,.35),
+            rgba(5,8,14,.65)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
 
 
     background-size:cover!important;
+
     background-position:center!important;
+
     background-repeat:no-repeat!important;
 
 
@@ -39,9 +52,92 @@
 }
 
 
+
+/* =========================
+   CONTENT LAYER
+========================= */
+
+
 #profiles_show > * {
 
     position:relative!important;
+
     z-index:1!important;
+
+}
+
+
+
+/* =========================
+   GLASS PANELS
+========================= */
+
+
+.c-brief,
+.c-history,
+.c-info {
+
+    background:
+        rgba(10,14,22,.65)!important;
+
+
+    border:
+        1px solid
+        rgba(190,210,240,.08)!important;
+
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+
+/* =========================
+   AVATAR
+========================= */
+
+
+.avatar img {
+
+    border-radius:18px!important;
+
+    filter:
+        grayscale(.15)
+        contrast(1.05);
+
+}
+
+
+
+/* =========================
+   TEXT
+========================= */
+
+
+h1,
+.title {
+
+    letter-spacing:.08em;
+
+}
+
+
+
+.notice {
+
+    opacity:.65;
+
+}
+
+
+
+/* =========================
+   BASE COLORS
+========================= */
+
+
+body {
+
+    color:#edf2fa!important;
 
 }
