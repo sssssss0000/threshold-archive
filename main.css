@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 50
+ENTRY 51
 */
 
 #profiles_show {
@@ -16,7 +16,7 @@ ENTRY 50
             rgba(5,8,14,.5),
             rgba(5,8,14,.85)
         ),
-        url("https://cdn.jsdelivr.net/gh/sssssss0000/threshold-archive@main/assets/background.jpg");
+        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -28,7 +28,6 @@ body {
     color:#dbe6f5!important;
 }
 
-/* remove default panels */
 .c-brief,
 .c-history,
 .c-info,
@@ -37,48 +36,28 @@ body {
     border:none!important;
 }
 
-/* avatar */
 .avatar img {
     border-radius:14px!important;
     filter:grayscale(.2) contrast(1.05);
     opacity:.92;
 }
 
-/* nickname */
 .c-brief .head h1 {
     color:#f2f6ff!important;
     letter-spacing:.22em;
     font-weight:600;
 }
 
-/* profile metadata */
 .notice {
     color:#91a2ba!important;
     opacity:.8;
     letter-spacing:.05em;
 }
 
-.notice span {
-    margin-right:5px;
-}
-
 .notice a {
     color:#c0d1ec!important;
 }
 
-/* subtle archive lines */
-.c-brief::after,
-.c-history::before,
-.c-info::before {
-    content:"";
-    display:block;
-    height:1px;
-    width:100%;
-    background:rgba(200,220,255,.1);
-    margin:15px 0;
-}
-
-/* history */
 .c-history .subheadline {
     color:#e8effb!important;
     text-transform:uppercase;
@@ -98,7 +77,6 @@ body {
     color:#7789a4!important;
 }
 
-/* activity */
 .c-additionals b {
     color:#e8effb!important;
     font-size:11px;
@@ -110,7 +88,6 @@ body {
     color:#b8cae5!important;
 }
 
-/* stats */
 .b-stats_bar {
     background:rgba(255,255,255,.04)!important;
     height:5px!important;
@@ -132,18 +109,10 @@ body {
 
 .stat_name a {
     color:#aebed6!important;
-    letter-spacing:.04em;
 }
 
-/* links */
-a:hover {
-    color:#ffffff!important;
-}
-
-/* profile icons */
 .profile-actions a {
     opacity:.55;
-    transition:.2s;
 }
 
 .profile-actions a:hover {
