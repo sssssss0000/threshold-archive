@@ -7,21 +7,13 @@ ENTRY 53
     background:#05080e!important;
 }
 
-#profiles_show::before {
-    content:"";
-    position:fixed;
-    inset:0;
+#profiles_show {
     background:
         linear-gradient(
             rgba(5,8,14,.45),
             rgba(5,8,14,.82)
         ),
-        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    z-index:-1;
-    pointer-events:none;
+        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg") center/cover fixed no-repeat!important;
 }
 
 body {
