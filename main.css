@@ -1,132 +1,44 @@
 /*
     THRESHOLD ARCHIVE
-    ENTRY 001
-
-    A profile between dream and reality.
+    IMAGE LAYER TEST
 */
 
 
-/* =========================
-   BACKGROUND SYSTEM
-========================= */
-
 #profiles_show {
     position:relative!important;
-
-    background:
-        linear-gradient(
-            rgba(5,8,14,.35),
-            rgba(5,8,14,.65)
-        ),
-        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
-
-    background-size:cover!important;
-    background-position:center!important;
-    background-repeat:no-repeat!important;
-
-    min-height:100vh!important;
+    background:#05080e!important;
 }
 
-
-/* =========================
-   DECORATION
-========================= */
 
 #profiles_show::before {
+
     content:"";
 
-    position:fixed;
+    position:absolute;
 
-    top:0;
-    right:0;
+    inset:0;
 
-    width:450px;
-    height:450px;
+    background-image:
+        linear-gradient(
+            rgba(5,8,14,.45),
+            rgba(5,8,14,.75)
+        ),
+        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
 
-    background:
-        url("https://sssssss0000.github.io/threshold-archive/assets/decoration.jpg");
-
-    background-size:contain;
+    background-size:cover;
+    background-position:center;
     background-repeat:no-repeat;
-    background-position:right top;
 
-    opacity:.35;
+    z-index:0;
 
     pointer-events:none;
-
-    z-index:2;
 }
 
-
-/* =========================
-   CONTENT LAYER
-========================= */
 
 #profiles_show > * {
-    position:relative;
-    z-index:3;
-}
 
+    position:relative!important;
 
-/* =========================
-   BASE COLORS
-========================= */
-
-body {
-    background:#05080e!important;
-    color:#edf2fa!important;
-}
-
-
-/* =========================
-   PROFILE BLOCKS
-========================= */
-
-.c-brief,
-.c-history,
-.c-info {
-
-    background:
-        rgba(10,14,22,.65)!important;
-
-    border:
-        1px solid
-        rgba(190,210,240,.08)!important;
-
-    backdrop-filter:blur(8px);
-
-}
-
-
-/* =========================
-   AVATAR
-========================= */
-
-.avatar img {
-
-    border-radius:18px!important;
-
-    filter:
-        grayscale(.15)
-        contrast(1.05);
-
-}
-
-
-/* =========================
-   TEXT
-========================= */
-
-h1,
-.title {
-
-    letter-spacing:.08em;
-
-}
-
-
-.notice {
-
-    opacity:.65;
+    z-index:1;
 
 }
