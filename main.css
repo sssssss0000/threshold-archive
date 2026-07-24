@@ -1,44 +1,18 @@
 /*
     THRESHOLD ARCHIVE
-    IMAGE LAYER TEST
+    IMAGE TEST
 */
 
 
 #profiles_show {
-    position:relative!important;
-    background:#05080e!important;
-}
-
-
-#profiles_show::before {
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
 
     background-image:
-        linear-gradient(
-            rgba(5,8,14,.45),
-            rgba(5,8,14,.75)
-        ),
-        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
+        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size:cover!important;
 
-    z-index:0;
+    background-position:center!important;
 
-    pointer-events:none;
-}
-
-
-#profiles_show > * {
-
-    position:relative!important;
-
-    z-index:1;
+    background-repeat:no-repeat!important;
 
 }
