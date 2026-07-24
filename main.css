@@ -1,19 +1,20 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 53
+ENTRY 55
 */
 
 #profiles_show {
     background:#05080e!important;
-}
-
-#profiles_show {
-    background:
+    background-image:
         linear-gradient(
             rgba(5,8,14,.45),
             rgba(5,8,14,.82)
         ),
-        url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg") center/cover fixed no-repeat!important;
+        url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg")!important;
+    background-size:cover!important;
+    background-position:center!important;
+    background-repeat:no-repeat!important;
+    background-attachment:fixed!important;
 }
 
 body {
@@ -45,11 +46,8 @@ body {
     opacity:.8;
 }
 
-.notice a {
-    color:#c0d1ec!important;
-}
-
-.c-history .subheadline {
+.c-history .subheadline,
+.c-additionals b {
     color:#e8effb!important;
     text-transform:uppercase;
     letter-spacing:.18em;
@@ -68,22 +66,10 @@ body {
     color:#7789a4!important;
 }
 
-.c-additionals b {
-    color:#e8effb!important;
-    text-transform:uppercase;
-    letter-spacing:.18em;
-    font-size:11px;
-}
-
-.c-additionals a {
-    color:#b8cae5!important;
-}
-
 .b-stats_bar {
     background:rgba(255,255,255,.04)!important;
     height:5px!important;
     border-radius:20px!important;
-    overflow:hidden!important;
 }
 
 .b-stats_bar .first {
@@ -100,12 +86,4 @@ body {
 
 .stat_name a {
     color:#aebed6!important;
-}
-
-.profile-actions a {
-    opacity:.55;
-}
-
-.profile-actions a:hover {
-    opacity:1;
 }
