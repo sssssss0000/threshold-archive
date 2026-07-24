@@ -1,9 +1,9 @@
 /*
-    THRESHOLD IMAGE DEBUG
+    THRESHOLD IMAGE TEST 2
 */
 
 #profiles_show {
-    background:#ff0000!important;
+    background:#000!important;
 }
 
 
@@ -21,11 +21,11 @@
 
     background-image:url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
 
-    background-size:cover;
+    background-size:cover!important;
+    background-position:center!important;
 
-    background-position:center;
-
-    z-index:9999;
+    z-index:9999!important;
 
     pointer-events:none;
+
 }
