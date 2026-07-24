@@ -1,8 +1,9 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 45
+ENTRY 47
 */
 
+/* background */
 #profiles_show {
     background:#05080e!important;
 }
@@ -13,8 +14,8 @@ ENTRY 45
     inset:0;
     background:
         linear-gradient(
-            rgba(5,8,14,.55),
-            rgba(5,8,14,.82)
+            rgba(5,8,14,.45),
+            rgba(5,8,14,.8)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
     background-size:cover;
@@ -24,92 +25,83 @@ ENTRY 45
     pointer-events:none;
 }
 
+/* base */
 body {
     color:#dce6f5!important;
 }
 
-/* profile header */
-
-.c-brief {
-    background:rgba(10,14,22,.72)!important;
-    border:1px solid rgba(180,210,240,.12)!important;
+/* remove heavy cards */
+.c-brief,
+.c-history,
+.c-info {
+    background:transparent!important;
+    border:none!important;
 }
 
-.c-brief .avatar img {
+/* avatar */
+.avatar img {
     border-radius:14px!important;
-    filter:grayscale(.2) contrast(1.05);
+    filter:grayscale(.15) contrast(1.05);
 }
 
+/* nickname */
 .c-brief .head h1 {
     color:#eef4ff!important;
-    letter-spacing:.12em;
+    letter-spacing:.15em;
     font-weight:600;
 }
 
+/* profile data */
 .notice {
-    color:#94a4bb!important;
+    color:#9aa9bf!important;
+    opacity:.8;
 }
 
 /* history */
-
-.c-history {
-    background:rgba(10,14,22,.65)!important;
-    border:1px solid rgba(180,210,240,.1)!important;
-}
-
 .c-history .subheadline {
     color:#eef4ff!important;
-    letter-spacing:.08em;
+    letter-spacing:.12em;
+    text-transform:uppercase;
 }
 
 .c-history .entry {
-    border-bottom:1px solid rgba(180,210,240,.08)!important;
+    border-bottom:1px solid rgba(200,220,255,.08)!important;
 }
 
 .c-history .entry:last-child {
     border:none!important;
 }
 
-/* statistics */
-
-.c-info {
-    background:rgba(10,14,22,.65)!important;
-    border:1px solid rgba(180,210,240,.1)!important;
-}
-
+/* stats line */
 .b-stats_bar {
-    background:rgba(255,255,255,.04)!important;
-    border-radius:6px!important;
-    overflow:hidden!important;
-    height:10px!important;
+    background:rgba(255,255,255,.05)!important;
+    height:6px!important;
+    border-radius:10px!important;
+    overflow:hidden;
 }
 
 .b-stats_bar .first {
-    background:#7287b8!important;
+    background:#758bb8!important;
 }
 
 .b-stats_bar .second {
-    background:#435574!important;
+    background:#465673!important;
 }
 
 .b-stats_bar .third {
-    background:#202b40!important;
+    background:#222c40!important;
 }
 
-.stat_names {
-    color:#9aaac0!important;
-}
-
+/* stat text */
 .stat_name a {
-    color:#cdd8e8!important;
+    color:#b8c7df!important;
 }
 
 /* links */
-
 a {
-    color:#b8c9e4!important;
+    color:#b9cae8!important;
 }
 
 a:hover {
-    color:#ffffff!important;
+    color:white!important;
 }
