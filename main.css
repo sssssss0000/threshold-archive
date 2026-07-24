@@ -1,14 +1,14 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 55
+ENTRY 56
 */
 
 #profiles_show {
     background:#05080e!important;
     background-image:
         linear-gradient(
-            rgba(5,8,14,.45),
-            rgba(5,8,14,.82)
+            rgba(5,8,14,.55),
+            rgba(5,8,14,.88)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg")!important;
     background-size:cover!important;
@@ -18,72 +18,103 @@ ENTRY 55
 }
 
 body {
+    background:transparent!important;
     color:#dbe6f5!important;
 }
+
+/* remove white shikimori surfaces */
+
+.l-page,
+.x1200,
+.profile-head,
+.profile-content,
+.c-column,
+.c-right,
+.c-left {
+    background:transparent!important;
+}
+
+/* profile blocks */
 
 .c-brief,
 .c-history,
 .c-info,
 .c-additionals {
-    background:transparent!important;
+    background:rgba(5,8,14,.35)!important;
     border:none!important;
 }
 
+/* avatar */
+
 .avatar img {
     border-radius:14px!important;
-    filter:grayscale(.15) contrast(1.05);
-    opacity:.92;
+    filter:grayscale(.2) contrast(1.05);
 }
 
+/* nickname */
+
 .c-brief .head h1 {
-    color:#f2f6ff!important;
-    letter-spacing:.18em;
+    color:#edf4ff!important;
+    letter-spacing:.2em;
     font-weight:600;
 }
 
+/* metadata */
+
 .notice {
-    color:#98a8bd!important;
-    opacity:.8;
+    color:#92a3ba!important;
 }
+
+.notice a {
+    color:#b9cbea!important;
+}
+
+/* history */
 
 .c-history .subheadline,
 .c-additionals b {
-    color:#e8effb!important;
+    color:#e7effc!important;
     text-transform:uppercase;
     letter-spacing:.18em;
     font-size:11px;
 }
 
 .c-history .entry {
-    padding:10px 0!important;
+    border-bottom:1px solid rgba(200,220,255,.07)!important;
 }
 
 .c-history .title {
-    color:#dbe7fa!important;
+    color:#dce8fa!important;
 }
 
 .c-history .misc {
-    color:#7789a4!important;
+    color:#73849e!important;
 }
 
+/* stats */
+
 .b-stats_bar {
-    background:rgba(255,255,255,.04)!important;
-    height:5px!important;
-    border-radius:20px!important;
+    background:rgba(255,255,255,.05)!important;
 }
 
 .b-stats_bar .first {
-    background:#91a6d0!important;
+    background:#879bc4!important;
 }
 
 .b-stats_bar .second {
-    background:#566a8b!important;
+    background:#526581!important;
 }
 
 .b-stats_bar .third {
-    background:#27344c!important;
+    background:#263348!important;
 }
 
 .stat_name a {
-    color:#aebed6!important;
+    color:#aebed5!important;
+}
+
+/* links */
+
+a:hover {
+    color:white!important;
 }
