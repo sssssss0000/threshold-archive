@@ -1,120 +1,83 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 56
+ENTRY 58
+PROFILE IDENTITY MODULE
 */
 
-#profiles_show {
-    background:#05080e!important;
-    background-image:
-        linear-gradient(
-            rgba(5,8,14,.55),
-            rgba(5,8,14,.88)
-        ),
-        url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg")!important;
-    background-size:cover!important;
-    background-position:center!important;
-    background-repeat:no-repeat!important;
-    background-attachment:fixed!important;
-}
-
-body {
-    background:transparent!important;
-    color:#dbe6f5!important;
-}
-
-/* remove white shikimori surfaces */
-
-.l-page,
-.x1200,
-.profile-head,
-.profile-content,
-.c-column,
-.c-right,
-.c-left {
+/* основной блок профиля */
+.profile-head {
     background:transparent!important;
 }
 
-/* profile blocks */
-
-.c-brief,
-.c-history,
-.c-info,
-.c-additionals {
-    background:rgba(5,8,14,.35)!important;
-    border:none!important;
+/* убираем серую карточку */
+.c-brief {
+    background:transparent!important;
 }
 
-/* avatar */
-
+/* аватар */
 .avatar img {
-    border-radius:14px!important;
-    filter:grayscale(.2) contrast(1.05);
+    border-radius:18px!important;
+    border:1px solid rgba(220,235,255,.18)!important;
+    box-shadow:
+        0 0 35px rgba(0,0,0,.65),
+        0 0 12px rgba(120,150,200,.12)!important;
+    filter:
+        grayscale(.12)
+        contrast(1.05)!important;
 }
 
-/* nickname */
+/* мягкая реакция на наведение */
+.avatar img:hover {
+    filter:
+        grayscale(0)
+        contrast(1.1)!important;
+}
 
-.c-brief .head h1 {
+/* кнопки под аватаром */
+.profile-actions {
+    opacity:.7;
+    transition:.25s ease;
+}
+
+.profile-actions:hover {
+    opacity:1;
+}
+
+/* ник */
+.head.misc .aliases {
     color:#edf4ff!important;
-    letter-spacing:.2em;
-    font-weight:600;
+    text-shadow:
+        0 0 15px rgba(170,200,255,.12);
 }
 
-/* metadata */
-
-.notice {
+/* данные под ником */
+.head.misc .notice {
     color:#92a3ba!important;
+    letter-spacing:.04em;
 }
 
-.notice a {
+.head.misc .notice span {
+    opacity:.85;
+}
+
+/* ссылки */
+.head.misc .notice a {
     color:#b9cbea!important;
 }
 
-/* history */
-
-.c-history .subheadline,
-.c-additionals b {
-    color:#e7effc!important;
-    text-transform:uppercase;
-    letter-spacing:.18em;
-    font-size:11px;
+.head.misc .notice a:hover {
+    color:#ffffff!important;
 }
 
-.c-history .entry {
-    border-bottom:1px solid rgba(200,220,255,.07)!important;
+/* убираем лишнее ощущение блока */
+.profile-head .c-brief {
+    border:none!important;
 }
 
-.c-history .title {
-    color:#dce8fa!important;
-}
-
-.c-history .misc {
-    color:#73849e!important;
-}
-
-/* stats */
-
-.b-stats_bar {
-    background:rgba(255,255,255,.05)!important;
-}
-
-.b-stats_bar .first {
-    background:#879bc4!important;
-}
-
-.b-stats_bar .second {
-    background:#526581!important;
-}
-
-.b-stats_bar .third {
-    background:#263348!important;
-}
-
-.stat_name a {
-    color:#aebed5!important;
-}
-
-/* links */
-
-a:hover {
-    color:white!important;
+/* плавность */
+.profile-head * {
+    transition:
+        color .2s ease,
+        opacity .2s ease,
+        background .2s ease;
 }
