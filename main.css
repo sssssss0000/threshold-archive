@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 49
+ENTRY 50
 */
 
 #profiles_show {
@@ -13,10 +13,10 @@ ENTRY 49
     inset:0;
     background:
         linear-gradient(
-            rgba(5,8,14,.45),
-            rgba(5,8,14,.82)
+            rgba(5,8,14,.5),
+            rgba(5,8,14,.85)
         ),
-        url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
+        url("https://cdn.jsdelivr.net/gh/sssssss0000/threshold-archive@main/assets/background.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -25,11 +25,10 @@ ENTRY 49
 }
 
 body {
-    color:#dce6f5!important;
+    color:#dbe6f5!important;
 }
 
-/* remove default blocks */
-
+/* remove default panels */
 .c-brief,
 .c-history,
 .c-info,
@@ -39,94 +38,114 @@ body {
 }
 
 /* avatar */
-
 .avatar img {
     border-radius:14px!important;
-    filter:grayscale(.15) contrast(1.05);
+    filter:grayscale(.2) contrast(1.05);
+    opacity:.92;
 }
 
 /* nickname */
-
 .c-brief .head h1 {
-    color:#f0f4ff!important;
-    letter-spacing:.18em;
+    color:#f2f6ff!important;
+    letter-spacing:.22em;
     font-weight:600;
 }
 
+/* profile metadata */
 .notice {
-    color:#98a8bd!important;
-    opacity:.75;
+    color:#91a2ba!important;
+    opacity:.8;
+    letter-spacing:.05em;
 }
 
-/* profile data */
-
 .notice span {
-    color:#9eafc6!important;
+    margin-right:5px;
 }
 
 .notice a {
-    color:#b9cbea!important;
+    color:#c0d1ec!important;
 }
 
-/* history list */
-
-.c-history {
-    margin-top:20px!important;
+/* subtle archive lines */
+.c-brief::after,
+.c-history::before,
+.c-info::before {
+    content:"";
+    display:block;
+    height:1px;
+    width:100%;
+    background:rgba(200,220,255,.1);
+    margin:15px 0;
 }
 
+/* history */
 .c-history .subheadline {
-    color:#eef4ff!important;
+    color:#e8effb!important;
     text-transform:uppercase;
-    letter-spacing:.18em;
+    letter-spacing:.2em;
     font-size:11px;
 }
 
 .c-history .entry {
-    padding:12px 0!important;
-    border-bottom:1px solid rgba(190,210,240,.06)!important;
-}
-
-.c-history .entry:last-child {
-    border-bottom:none!important;
+    padding:10px 0!important;
 }
 
 .c-history .title {
-    color:#dce7f8!important;
+    color:#dbe7fa!important;
 }
 
 .c-history .misc {
-    color:#7f90aa!important;
+    color:#7789a4!important;
 }
 
 /* activity */
-
-.c-additionals {
-    margin-top:20px!important;
-}
-
 .c-additionals b {
-    color:#eef4ff!important;
-    letter-spacing:.15em;
+    color:#e8effb!important;
     font-size:11px;
+    letter-spacing:.2em;
     text-transform:uppercase;
 }
 
 .c-additionals a {
-    color:#b8c9e8!important;
+    color:#b8cae5!important;
 }
 
-/* right history */
+/* stats */
+.b-stats_bar {
+    background:rgba(255,255,255,.04)!important;
+    height:5px!important;
+    border-radius:20px!important;
+    overflow:hidden!important;
+}
 
-.profile-head .c-history {
-    opacity:.95;
+.b-stats_bar .first {
+    background:#91a6d0!important;
+}
+
+.b-stats_bar .second {
+    background:#566a8b!important;
+}
+
+.b-stats_bar .third {
+    background:#27344c!important;
+}
+
+.stat_name a {
+    color:#aebed6!important;
+    letter-spacing:.04em;
 }
 
 /* links */
-
-a {
-    color:#b8c9e8!important;
-}
-
 a:hover {
     color:#ffffff!important;
+}
+
+/* profile icons */
+.profile-actions a {
+    opacity:.55;
+    transition:.2s;
+}
+
+.profile-actions a:hover {
+    opacity:1;
 }
