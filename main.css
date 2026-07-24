@@ -1,6 +1,6 @@
 /*
     THRESHOLD ARCHIVE
-    ENTRY 030
+    ENTRY 42
 
     A profile between dream and reality.
 */
@@ -12,8 +12,6 @@
 
 
 #profiles_show {
-
-    position:relative!important;
 
     background:#05080e!important;
 
@@ -27,25 +25,29 @@
 
     position:fixed;
 
-    inset:0;
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
 
 
     background-image:
         linear-gradient(
-            rgba(5,8,14,.35),
-            rgba(5,8,14,.65)
+            rgba(5,8,14,.45),
+            rgba(5,8,14,.75)
         ),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg");
 
 
-    background-size:cover!important;
+    background-size:cover;
 
-    background-position:center!important;
+    background-position:center;
 
-    background-repeat:no-repeat!important;
+    background-repeat:no-repeat;
 
 
-    z-index:0!important;
+    z-index:-1;
 
     pointer-events:none;
 
@@ -54,22 +56,20 @@
 
 
 /* =========================
-   CONTENT LAYER
+   COLORS
 ========================= */
 
 
-#profiles_show > * {
+body {
 
-    position:relative!important;
-
-    z-index:1!important;
+    color:#edf2fa!important;
 
 }
 
 
 
 /* =========================
-   GLASS PANELS
+   PROFILE BLOCKS
 ========================= */
 
 
@@ -78,15 +78,12 @@
 .c-info {
 
     background:
-        rgba(10,14,22,.65)!important;
+        rgba(10,14,22,.55)!important;
 
 
     border:
         1px solid
         rgba(190,210,240,.08)!important;
-
-
-    backdrop-filter:blur(8px);
 
 }
 
@@ -126,18 +123,5 @@ h1,
 .notice {
 
     opacity:.65;
-
-}
-
-
-
-/* =========================
-   BASE COLORS
-========================= */
-
-
-body {
-
-    color:#edf2fa!important;
 
 }
