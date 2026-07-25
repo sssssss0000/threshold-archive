@@ -1,39 +1,63 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 58.1
-PROFILE IDENTITY FIX
+ENTRY 59
+FOUNDATION LAYER
 */
 
 #profiles_show {
     background:#05080e!important;
     background-image:
-        linear-gradient(rgba(5,8,14,.55),rgba(5,8,14,.88)),
+        linear-gradient(rgba(5,8,14,.58),rgba(5,8,14,.86)),
         url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg")!important;
     background-size:cover!important;
     background-position:center!important;
     background-repeat:no-repeat!important;
     background-attachment:fixed!important;
+    color:#dbe6f5!important;
 }
 
-.c-brief {
+.l-page,
+#page,
+.profile-head,
+.c-brief,
+.c-info {
     background:transparent!important;
+}
+
+.profile-head,
+.c-brief,
+.c-info,
+.c-history,
+.c-additionals,
+.c-lists-info {
     border:none!important;
+    box-shadow:none!important;
+}
+
+body {
+    color:#dbe6f5!important;
+}
+
+a {
+    color:#b9cbea!important;
+    transition:.25s ease;
+}
+
+a:hover {
+    color:#ffffff!important;
 }
 
 .avatar img {
-    border-radius:18px!important;
+    border-radius:22px!important;
     border:1px solid rgba(220,235,255,.18)!important;
-    box-shadow:0 0 35px rgba(0,0,0,.65),0 0 12px rgba(120,150,200,.12)!important;
-    filter:grayscale(.12) contrast(1.05)!important;
-}
-
-.avatar img:hover {
-    filter:grayscale(0) contrast(1.1)!important;
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.65),
+        0 0 20px rgba(150,180,240,.12)!important;
 }
 
 .profile-actions {
-    opacity:.75;
-    transition:.25s ease;
+    opacity:.65;
+    transition:.3s ease;
 }
 
 .profile-actions:hover {
@@ -42,18 +66,51 @@ PROFILE IDENTITY FIX
 
 .head.misc .aliases {
     color:#edf4ff!important;
-    text-shadow:0 0 15px rgba(170,200,255,.12);
+    font-family:var(--font-alt)!important;
+    font-size:32px!important;
+    letter-spacing:.18em!important;
+    font-weight:600!important;
+    text-shadow:
+        0 0 25px rgba(200,220,255,.12);
 }
 
 .head.misc .notice {
     color:#92a3ba!important;
-    letter-spacing:.04em;
+    letter-spacing:.06em!important;
 }
 
-.head.misc .notice a {
-    color:#b9cbea!important;
+.head.misc .notice span {
+    opacity:.85;
 }
 
-.head.misc .notice a:hover {
+.subheadline,
+.subheadline a {
+    color:#dbe6f5!important;
+    background:transparent!important;
+    border:none!important;
+    letter-spacing:.2em!important;
+    text-transform:uppercase;
+}
+
+.c-history,
+.c-info {
+    color:#dbe6f5!important;
+}
+
+.b-stats_bar,
+.c-additionals {
+    background:rgba(5,8,14,.25)!important;
+    border:none!important;
+}
+
+.b-stats_bar .bar {
+    background:rgba(255,255,255,.05)!important;
+}
+
+.b-stats_bar .stat_name a {
+    color:#92a3ba!important;
+}
+
+.b-stats_bar .stat_name a:hover {
     color:#ffffff!important;
 }
