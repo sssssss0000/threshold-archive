@@ -1,116 +1,99 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 59
-FOUNDATION LAYER
+ENTRY 65
+STRUCTURE LAYER
 */
-
-#profiles_show {
-    background:#05080e!important;
-    background-image:
-        linear-gradient(rgba(5,8,14,.58),rgba(5,8,14,.86)),
-        url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg")!important;
-    background-size:cover!important;
-    background-position:center!important;
-    background-repeat:no-repeat!important;
-    background-attachment:fixed!important;
-    color:#dbe6f5!important;
-}
 
 .l-page,
 #page,
 .profile-head,
-.c-brief,
-.c-info {
-    background:transparent!important;
-}
-
-.profile-head,
+.c-layout,
+.c-column,
+.c-profile,
 .c-brief,
 .c-info,
 .c-history,
 .c-additionals,
-.c-lists-info {
+.c-lists-info,
+.b-stats_bar {
+    background:transparent!important;
     border:none!important;
     box-shadow:none!important;
 }
 
-body {
-    color:#dbe6f5!important;
+.profile-head {
+    display:flex!important;
+    align-items:flex-start!important;
+    gap:30px!important;
 }
 
-a {
-    color:#b9cbea!important;
-    transition:.25s ease;
-}
-
-a:hover {
-    color:#ffffff!important;
+.c-brief {
+    display:flex!important;
+    background:rgba(5,8,14,.35)!important;
+    backdrop-filter:blur(12px);
+    border-radius:24px!important;
+    padding:20px!important;
 }
 
 .avatar img {
-    border-radius:22px!important;
-    border:1px solid rgba(220,235,255,.18)!important;
-    box-shadow:
-        0 15px 50px rgba(0,0,0,.65),
-        0 0 20px rgba(150,180,240,.12)!important;
+    border-radius:24px!important;
 }
 
-.profile-actions {
-    opacity:.65;
-    transition:.3s ease;
+.head.misc {
+    margin-top:15px!important;
 }
 
-.profile-actions:hover {
-    opacity:1;
-}
-
-.head.misc .aliases {
-    color:#edf4ff!important;
+.aliases {
     font-family:var(--font-alt)!important;
+    color:#edf4ff!important;
     font-size:32px!important;
     letter-spacing:.18em!important;
-    font-weight:600!important;
-    text-shadow:
-        0 0 25px rgba(200,220,255,.12);
 }
 
-.head.misc .notice {
+.notice {
     color:#92a3ba!important;
-    letter-spacing:.06em!important;
 }
 
-.head.misc .notice span {
-    opacity:.85;
+.c-history {
+    background:rgba(5,8,14,.35)!important;
+    backdrop-filter:blur(12px);
+    border-radius:24px!important;
+    padding:20px!important;
 }
 
-.subheadline,
-.subheadline a {
-    color:#dbe6f5!important;
-    background:transparent!important;
+.c-info {
+    margin-top:30px!important;
+}
+
+.c-lists-info,
+.c-additionals {
+    background:rgba(5,8,14,.35)!important;
+    backdrop-filter:blur(12px);
+    border-radius:24px!important;
+    padding:20px!important;
+}
+
+.subheadline {
+    background:none!important;
     border:none!important;
+}
+
+.subheadline a {
+    color:#edf4ff!important;
     letter-spacing:.2em!important;
     text-transform:uppercase;
 }
 
-.c-history,
-.c-info {
-    color:#dbe6f5!important;
-}
-
-.b-stats_bar,
-.c-additionals {
-    background:rgba(5,8,14,.25)!important;
-    border:none!important;
-}
-
 .b-stats_bar .bar {
-    background:rgba(255,255,255,.05)!important;
+    background:rgba(255,255,255,.08)!important;
+    border-radius:999px!important;
+    overflow:hidden!important;
 }
 
 .b-stats_bar .stat_name a {
-    color:#92a3ba!important;
+    color:#aab8cc!important;
 }
 
 .b-stats_bar .stat_name a:hover {
-    color:#ffffff!important;
+    color:#fff!important;
 }
