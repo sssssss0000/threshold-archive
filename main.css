@@ -3,6 +3,16 @@ THRESHOLD ARCHIVE
 ENTRY 108
 */
 
+body {
+    background:
+    linear-gradient(
+        rgba(3,6,12,.55),
+        rgba(3,6,12,.75)
+    ),
+    url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg") center/cover fixed no-repeat!important;
+    overflow-x:hidden!important;
+}
+
 .l-page,
 #page,
 .profile-head,
@@ -20,17 +30,6 @@ ENTRY 108
     box-shadow:none!important;
 }
 
-body {
-    overflow-x:hidden!important;
-    background:
-    linear-gradient(
-        180deg,
-        rgba(5,8,14,.35),
-        rgba(5,8,14,.8)
-    ),
-    url("YOUR_BACKGROUND_IMAGE") center/cover fixed!important;
-}
-
 .profile-head {
     position:relative!important;
     min-height:520px!important;
@@ -42,7 +41,7 @@ body {
     left:50%!important;
     top:20px!important;
     transform:translateX(-50%)!important;
-    width:390px!important;
+    width:420px!important;
     display:flex!important;
     flex-direction:column!important;
     align-items:center!important;
@@ -50,15 +49,8 @@ body {
     background:rgba(5,8,14,.45)!important;
     backdrop-filter:blur(14px)!important;
     border-radius:28px!important;
-    padding:25px 20px!important;
-    box-sizing:border-box!important;
+    padding:25px!important;
     z-index:5!important;
-}
-
-.avatar {
-    display:flex!important;
-    justify-content:center!important;
-    width:100%!important;
 }
 
 .avatar img {
@@ -70,7 +62,6 @@ body {
 .head.misc {
     margin-top:20px!important;
     text-align:center!important;
-    width:100%!important;
 }
 
 .aliases {
@@ -109,7 +100,7 @@ body {
 
 .c-info {
     position:absolute!important;
-    right:80px!important;
+    right:40px!important;
     top:20px!important;
     width:320px!important;
     margin:0!important;
@@ -171,6 +162,7 @@ body {
         flex-direction:column!important;
         align-items:center!important;
     }
+
     .c-brief,
     .c-history,
     .c-info {
