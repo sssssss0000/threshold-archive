@@ -1,9 +1,14 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 105
+ENTRY 106
 CLEAN RESTORE 96
 */
-
+body{
+background:
+radial-gradient(circle at 50% 0%,rgba(35,55,90,.35),transparent 45%),
+linear-gradient(180deg,#05080e,#020307)!important;
+color:#edf4ff!important;
+}
 .l-page,
 #page,
 .profile-head,
@@ -15,113 +20,95 @@ CLEAN RESTORE 96
 .c-history,
 .c-additionals,
 .c-lists-info,
-.b-stats_bar {
-    background:transparent!important;
-    border:none!important;
-    box-shadow:none!important;
+.b-stats_bar{
+background:transparent!important;
+border:none!important;
+box-shadow:none!important;
 }
-
-.profile-head {
-    display:block!important;
+.profile-head{
+position:relative!important;
+display:block!important;
 }
-
-.c-brief {
-    display:flex!important;
-    align-items:flex-start!important;
-    gap:30px!important;
-    background:rgba(5,8,14,.35)!important;
-    backdrop-filter:blur(12px);
-    border-radius:24px!important;
-    padding:20px!important;
-    overflow:visible!important;
+.c-brief{
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
+box-sizing:border-box!important;
+overflow:visible!important;
 }
-
-.avatar img {
-    border-radius:24px!important;
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.5)!important;
+.c-brief .avatar{
+flex-shrink:0!important;
 }
-
-.head.misc {
-    margin-top:15px!important;
+.c-brief .avatar img{
+border-radius:24px!important;
+box-shadow:0 15px 40px rgba(0,0,0,.5)!important;
 }
-
-.aliases {
-    font-family:var(--font-alt)!important;
-    color:#edf4ff!important;
-    font-size:32px!important;
-    letter-spacing:.18em!important;
-    white-space:nowrap!important;
-    overflow:visible!important;
+.head.misc{
+margin-top:15px!important;
 }
-
-.notice {
-    color:#92a3ba!important;
-    white-space:nowrap!important;
+.aliases{
+font-family:var(--font-alt)!important;
+color:#edf4ff!important;
+font-size:32px!important;
+letter-spacing:.18em!important;
+line-height:1.2!important;
+white-space:normal!important;
+overflow:visible!important;
+word-break:normal!important;
 }
-
-.c-history {
-    background:rgba(5,8,14,.35)!important;
-    backdrop-filter:blur(12px);
-    border-radius:24px!important;
-    padding:20px!important;
-    overflow:hidden!important;
+.notice{
+color:#92a3ba!important;
+white-space:normal!important;
+overflow:visible!important;
 }
-
-.c-history a {
-    pointer-events:auto!important;
+.c-history{
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
+box-sizing:border-box!important;
 }
-
-.c-info {
-    margin-top:30px!important;
+.c-history a{
+pointer-events:auto!important;
 }
-
+.c-info{
+margin-top:30px!important;
+}
 .c-lists-info,
-.c-additionals {
-    background:rgba(5,8,14,.35)!important;
-    backdrop-filter:blur(12px);
-    border-radius:24px!important;
-    padding:20px!important;
+.c-additionals{
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
+box-sizing:border-box!important;
 }
-
-.subheadline {
-    background:none!important;
-    border:none!important;
+.subheadline{
+background:none!important;
+border:none!important;
 }
-
-.subheadline a {
-    color:#edf4ff!important;
-    letter-spacing:.2em!important;
-    text-transform:uppercase;
+.subheadline a{
+color:#edf4ff!important;
+letter-spacing:.2em!important;
+text-transform:uppercase;
 }
-
-.b-stats_bar .bar {
-    background:rgba(255,255,255,.08)!important;
-    border-radius:999px!important;
-    overflow:hidden!important;
+.b-stats_bar .bar{
+background:rgba(255,255,255,.08)!important;
+border-radius:999px!important;
+overflow:hidden!important;
 }
-
-.b-stats_bar .stat_name a {
-    color:#aab8cc!important;
+.b-stats_bar .stat_name a{
+color:#aab8cc!important;
 }
-
-.b-stats_bar .stat_name a:hover {
-    color:#fff!important;
+.b-stats_bar .stat_name a:hover{
+color:#fff!important;
 }
-
-.c-column {
-    overflow:visible!important;
+.cc-2,
+.cc-3{
+overflow:visible!important;
 }
-
-.profile-head .c-brief,
-.profile-head .c-history {
-    max-width:none!important;
-}
-
-.c-brief .name {
-    overflow:visible!important;
-}
-
-.c-brief .notice {
-    max-width:none!important;
+.b-friend,
+.b-club{
+border-radius:18px!important;
+overflow:hidden!important;
 }
