@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 215
+ENTRY 216
 PROFILE RECONSTRUCTION
 */
 
@@ -157,7 +157,6 @@ min-width:70px!important;
 max-width:70px!important;
 min-height:70px!important;
 max-height:70px!important;
-aspect-ratio:1/1!important;
 border-radius:50%!important;
 overflow:hidden!important;
 display:flex!important;
@@ -167,44 +166,33 @@ flex:0 0 70px!important;
 }
 
 
-/* КЛУБЫ - ПОЛНАЯ СИНХРОНИЗАЦИЯ С ДРУЗЬЯМИ */
+/* КЛУБЫ FIX */
 
-body:has(.profile-head) .clubs .b-club,
-body:has(.profile-head) .clubs .cover,
-body:has(.profile-head) .clubs .image,
-body:has(.profile-head) .clubs .logo,
-body:has(.profile-head) .clubs .avatar,
-body:has(.profile-head) .clubs .b-club>a{
+body:has(.profile-head) .clubs .b-club.c-column.avatar{
 width:70px!important;
 height:70px!important;
 min-width:70px!important;
 max-width:70px!important;
 min-height:70px!important;
 max-height:70px!important;
-aspect-ratio:1/1!important;
-border-radius:50%!important;
-overflow:hidden!important;
 padding:0!important;
 margin:0!important;
-display:flex!important;
-align-items:center!important;
-justify-content:center!important;
-flex:0 0 70px!important;
-box-sizing:border-box!important;
-}
-
-
-body:has(.profile-head) .clubs .b-club *{
-max-width:70px!important;
-max-height:70px!important;
-border-radius:50%!important;
 overflow:hidden!important;
+border-radius:50%!important;
+display:block!important;
+box-sizing:border-box!important;
+flex:0 0 70px!important;
 }
 
+body:has(.profile-head) .clubs .b-club.c-column.avatar > a{
+width:70px!important;
+height:70px!important;
+display:block!important;
+overflow:hidden!important;
+border-radius:50%!important;
+}
 
-body:has(.profile-head) .friends img,
-body:has(.profile-head) .clubs img,
-body:has(.profile-head) .b-user.avatar img{
+body:has(.profile-head) .clubs .b-club.c-column.avatar img.logo{
 width:70px!important;
 height:70px!important;
 min-width:70px!important;
@@ -213,6 +201,18 @@ min-height:70px!important;
 max-height:70px!important;
 object-fit:cover!important;
 object-position:center!important;
+border-radius:50%!important;
+display:block!important;
+}
+
+
+/* изображения */
+
+body:has(.profile-head) .friends img,
+body:has(.profile-head) .b-user.avatar img{
+width:70px!important;
+height:70px!important;
+object-fit:cover!important;
 border-radius:50%!important;
 display:block!important;
 }
