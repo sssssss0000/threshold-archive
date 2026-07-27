@@ -1,25 +1,110 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 67
-DEBUG LAYER
+ENTRY 68
+STRUCTURE LAYER
 */
 
-.profile-head {
-    background:red!important;
+#profiles_show{
+background:#05080e!important;
+background-image:
+linear-gradient(rgba(5,8,14,.58),rgba(5,8,14,.86)),
+url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
+background-size:cover!important;
+background-position:center!important;
+background-repeat:no-repeat!important;
+background-attachment:fixed!important;
 }
 
-.c-brief {
-    background:blue!important;
+.l-page,
+#page,
+.profile-head,
+.c-layout,
+.c-column,
+.c-profile,
+.c-brief,
+.c-info,
+.c-history,
+.c-additionals,
+.c-lists-info,
+.b-stats_bar{
+background:transparent!important;
+border:none!important;
+box-shadow:none!important;
 }
 
-.c-history {
-    background:green!important;
+.profile-head{
+display:flex!important;
+align-items:flex-start!important;
+gap:30px!important;
 }
 
-.c-info {
-    background:purple!important;
+.c-brief{
+display:flex!important;
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
 }
 
-.c-additionals {
-    background:orange!important;
+.avatar img{
+border-radius:24px!important;
+}
+
+.head.misc{
+margin-top:15px!important;
+}
+
+.aliases{
+font-family:var(--font-alt)!important;
+color:#edf4ff!important;
+font-size:32px!important;
+letter-spacing:.18em!important;
+}
+
+.notice{
+color:#92a3ba!important;
+}
+
+.c-history{
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
+}
+
+.c-info{
+margin-top:30px!important;
+}
+
+.c-lists-info,
+.c-additionals{
+background:rgba(5,8,14,.35)!important;
+backdrop-filter:blur(12px);
+border-radius:24px!important;
+padding:20px!important;
+}
+
+.subheadline{
+background:none!important;
+border:none!important;
+}
+
+.subheadline a{
+color:#edf4ff!important;
+letter-spacing:.2em!important;
+text-transform:uppercase;
+}
+
+.b-stats_bar .bar{
+background:rgba(255,255,255,.08)!important;
+border-radius:999px!important;
+overflow:hidden!important;
+}
+
+.b-stats_bar .stat_name a{
+color:#aab8cc!important;
+}
+
+.b-stats_bar .stat_name a:hover{
+color:#fff!important;
 }
