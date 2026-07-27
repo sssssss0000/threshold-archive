@@ -1,46 +1,55 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 73
-ARCHIVE REBALANCE
+ENTRY 74
+BACKGROUND FIX
 */
 
-#profiles_show{
+html,
+body{
 background:#05080e!important;
-background-image:
-linear-gradient(rgba(5,8,14,.55),rgba(5,8,14,.85)),
-url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
-background-size:cover!important;
-background-position:center!important;
-background-repeat:no-repeat!important;
-background-attachment:fixed!important;
 }
 
-.l-page,
+body:before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-2;
+background:
+linear-gradient(
+rgba(5,8,14,.55),
+rgba(5,8,14,.85)
+),
+url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
 #page,
+.l-page,
 .profile-head,
 .c-layout,
 .c-column,
-.c-profile,
-.c-info,
-.c-history,
-.c-additionals,
-.c-lists-info,
-.b-stats_bar{
+.c-profile{
 background:transparent!important;
-border:none!important;
-box-shadow:none!important;
+}
+
+.c-history{
+background:transparent!important;
+backdrop-filter:none!important;
+filter:none!important;
+}
+
+.c-history *{
+pointer-events:auto!important;
 }
 
 .c-brief{
-display:block!important;
 background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
 border-radius:24px!important;
+backdrop-filter:blur(12px);
 padding:20px!important;
-}
-
-.avatar{
-position:relative!important;
 }
 
 .avatar img{
@@ -48,10 +57,6 @@ border-radius:26px!important;
 box-shadow:
 0 20px 60px rgba(0,0,0,.55),
 0 0 30px rgba(170,200,255,.08)!important;
-}
-
-.head.misc{
-margin-top:15px!important;
 }
 
 .aliases{
@@ -73,27 +78,18 @@ text-transform:uppercase;
 }
 
 .notice{
-display:flex!important;
-flex-direction:column!important;
-gap:5px!important;
 color:#92a3ba!important;
 letter-spacing:.12em!important;
 text-transform:uppercase!important;
 font-size:11px!important;
 }
 
-.c-history{
-background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
-border-radius:24px!important;
-padding:20px!important;
-}
-
+.c-info,
 .c-lists-info,
 .c-additionals{
 background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
 border-radius:24px!important;
+backdrop-filter:blur(12px);
 padding:20px!important;
 }
 
