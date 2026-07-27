@@ -1,6 +1,6 @@
-/*
+ /*
 THRESHOLD ARCHIVE
-ENTRY 225
+ENTRY 226
 PROFILE RECONSTRUCTION
 */
 
@@ -190,19 +190,14 @@ color:#aab8cc!important;
 body:has(.profile-head) .cc-friends .b-user.avatar{
 width:70px!important;
 height:70px!important;
-
 min-width:70px!important;
 max-width:70px!important;
-
 min-height:70px!important;
 max-height:70px!important;
-
 padding:0!important;
 margin:0!important;
-
 border-radius:50%!important;
 overflow:hidden!important;
-
 box-sizing:border-box!important;
 }
 
@@ -210,10 +205,8 @@ box-sizing:border-box!important;
 
 body:has(.profile-head) .cc-friends .b-user.avatar > a.avatar{
 display:block!important;
-
 width:70px!important;
 height:70px!important;
-
 border-radius:50%!important;
 overflow:hidden!important;
 }
@@ -223,11 +216,8 @@ overflow:hidden!important;
 body:has(.profile-head) .cc-friends .b-user.avatar img{
 width:70px!important;
 height:70px!important;
-
 object-fit:cover!important;
-
 border-radius:50%!important;
-
 display:block!important;
 }
 
@@ -236,127 +226,102 @@ display:block!important;
 
 /* ===========================
    КЛУБЫ ENTRY 225
-   СЕТКА 2x2
    =========================== */
 
 
 body:has(.profile-head) .b-clubs{
-
 display:grid!important;
-
 grid-template-columns:repeat(2,70px)!important;
 grid-template-rows:repeat(2,70px)!important;
-
 gap:30px!important;
-
 width:max-content!important;
-
 }
-
 
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
-
 width:70px!important;
 height:70px!important;
-
 min-width:70px!important;
 max-width:70px!important;
-
 min-height:70px!important;
 max-height:70px!important;
-
-
 padding:0!important;
 margin:0!important;
-
-
 border-radius:50%!important;
-
 overflow:hidden!important;
-
 display:flex!important;
-
 align-items:center!important;
 justify-content:center!important;
-
-
 aspect-ratio:1 / 1!important;
-
 box-sizing:border-box!important;
-
 }
-
-
 
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar > a{
-
 display:block!important;
-
 width:70px!important;
 height:70px!important;
-
 border-radius:50%!important;
-
 overflow:hidden!important;
-
 }
-
 
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar img.logo{
-
 width:70px!important;
 height:70px!important;
-
-
 object-fit:cover!important;
-
 object-position:center!important;
-
-
 border-radius:50%!important;
-
-
 display:block!important;
-
 }
 
 
 
-
-
-/* защита от старых правил Shikimori */
-
 body:has(.profile-head) .b-clubs .b-club.avatar,
 body:has(.profile-head) .b-clubs .b-club.avatar *,
 body:has(.profile-head) .b-clubs .b-club.avatar a{
-
 max-width:70px!important;
-
 max-height:70px!important;
-
 }
 
 
 
 
 /* ===========================
-   КОММЕНТАРИИ
+   КОММЕНТАРИИ ENTRY 226
    =========================== */
 
 
 body:has(.profile-head) .b-comments,
-body:has(.profile-head) .b-comments .comment,
+body:has(.profile-head) .b-comments *,
+body:has(.profile-head) .b-comment,
+body:has(.profile-head) .b-comment *,
+body:has(.profile-head) .comment,
+body:has(.profile-head) .comment *,
+body:has(.profile-head) .comment-content,
+body:has(.profile-head) .comment-content *,
 body:has(.profile-head) .b-comments .body,
-body:has(.profile-head) .b-comments .body a{
-
+body:has(.profile-head) .b-comments .body *{
 color:#edf4ff!important;
+}
 
+
+
+body:has(.profile-head) .b-comments a,
+body:has(.profile-head) .b-comment a,
+body:has(.profile-head) .comment a{
+color:#b9d7ff!important;
+}
+
+
+
+body:has(.profile-head) .b-comments .name,
+body:has(.profile-head) .b-comment .name,
+body:has(.profile-head) .comment .name{
+color:#ffffff!important;
 }
 
 
@@ -367,25 +332,15 @@ color:#edf4ff!important;
 
 
 body:has(.profile-head) .profile-actions{
-
 position:absolute!important;
-
 top:510px!important;
-
 left:50%!important;
-
 transform:translateX(-50%)!important;
-
 padding:20px!important;
-
 border-radius:28px!important;
-
 background:rgba(5,8,14,.45)!important;
-
 backdrop-filter:blur(16px)!important;
-
 }
-
 
 
 
@@ -396,9 +351,7 @@ backdrop-filter:blur(16px)!important;
 body:has(.profile-head) .cc-2,
 body:has(.profile-head) .cc-3,
 body:has(.profile-head) .cc-4{
-
 gap:30px!important;
-
 }
 
 
@@ -406,11 +359,8 @@ gap:30px!important;
 body:has(.profile-head) .c-column,
 body:has(.profile-head) .b-catalog_entry,
 body:has(.profile-head) .b-user_rate{
-
 border-radius:24px!important;
-
 }
-
 
 
 
@@ -418,13 +368,9 @@ border-radius:24px!important;
 @media(max-width:1100px){
 
 body:has(.profile-head) .profile-head{
-
 flex-direction:column!important;
-
 align-items:center!important;
-
 padding:20px!important;
-
 }
 
 
@@ -432,11 +378,8 @@ padding:20px!important;
 body:has(.profile-head) .c-brief,
 body:has(.profile-head) .c-history,
 body:has(.profile-head) .c-info{
-
 width:90%!important;
-
 min-width:0!important;
-
 }
 
 }
