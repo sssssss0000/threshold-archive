@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 205
+ENTRY 206
 PROFILE RECONSTRUCTION
 */
 
@@ -137,18 +137,32 @@ body:has(.profile-head) .b-stats_bar .stat_name a:hover {
     color:#fff!important;
 }
 
+body:has(.profile-head) .friends .b-user,
+body:has(.profile-head) .clubs .b-club,
+body:has(.profile-head) .friends .cover,
+body:has(.profile-head) .clubs .cover {
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:1/1!important;
+    overflow:hidden!important;
+    border-radius:50%!important;
+}
+
 body:has(.profile-head) .friends img,
 body:has(.profile-head) .clubs img,
 body:has(.profile-head) .b-user.avatar img {
     width:80px!important;
     height:80px!important;
+    aspect-ratio:1/1!important;
     object-fit:cover!important;
     border-radius:50%!important;
 }
 
-body:has(.profile-head) .friends,
-body:has(.profile-head) .clubs {
-    gap:20px!important;
+body:has(.profile-head) .friends .cover,
+body:has(.profile-head) .clubs .cover {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
 }
 
 body:has(.profile-head) .friends .subheadline a,
