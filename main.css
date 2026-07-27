@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 221
+ENTRY 222
 PROFILE RECONSTRUCTION
 */
 
@@ -29,6 +29,7 @@ border:none!important;
 box-shadow:none!important;
 }
 
+
 body:has(.profile-head) .profile-head{
 position:relative!important;
 width:100%!important;
@@ -40,6 +41,7 @@ gap:40px!important;
 padding:40px!important;
 box-sizing:border-box!important;
 }
+
 
 body:has(.profile-head) .c-brief{
 position:relative!important;
@@ -54,17 +56,22 @@ backdrop-filter:blur(16px)!important;
 border-radius:32px!important;
 }
 
+
 body:has(.profile-head) .avatar{
-width:220px!important;
-height:220px!important;
 display:flex!important;
 justify-content:center!important;
 align-items:center!important;
-margin-left:auto!important;
-margin-right:auto!important;
 }
 
-body:has(.profile-head) .avatar img{
+
+body:has(.profile-head) .c-brief > .avatar{
+width:220px!important;
+height:220px!important;
+margin:0 auto!important;
+}
+
+
+body:has(.profile-head) .c-brief > .avatar img{
 width:220px!important;
 height:220px!important;
 object-fit:cover!important;
@@ -74,11 +81,13 @@ box-shadow:
 0 25px 60px rgba(0,0,0,.7)!important;
 }
 
+
 body:has(.profile-head) .head.misc{
 margin-top:25px!important;
 width:100%!important;
 text-align:center!important;
 }
+
 
 body:has(.profile-head) .aliases{
 color:#edf4ff!important;
@@ -91,6 +100,7 @@ overflow-wrap:break-word!important;
 text-align:center!important;
 }
 
+
 body:has(.profile-head) .notice{
 color:#92a3ba!important;
 margin-top:15px!important;
@@ -98,6 +108,7 @@ line-height:1.5!important;
 white-space:normal!important;
 text-align:center!important;
 }
+
 
 body:has(.profile-head) .c-history{
 position:relative!important;
@@ -109,11 +120,13 @@ border-radius:32px!important;
 padding:25px!important;
 }
 
+
 body:has(.profile-head) .c-info{
 position:relative!important;
 width:320px!important;
 flex-shrink:0!important;
 }
+
 
 body:has(.profile-head) .c-lists-info,
 body:has(.profile-head) .c-additionals,
@@ -127,6 +140,7 @@ box-shadow:none!important;
 margin-bottom:25px!important;
 }
 
+
 body:has(.profile-head) .subheadline,
 body:has(.profile-head) .subheadline a{
 background:none!important;
@@ -136,39 +150,26 @@ letter-spacing:.2em!important;
 text-transform:uppercase!important;
 }
 
+
 body:has(.profile-head) .b-stats_bar .bar{
 background:rgba(255,255,255,.08)!important;
 border-radius:999px!important;
 overflow:hidden!important;
 }
 
+
 body:has(.profile-head) .b-stats_bar .stat_name a{
 color:#aab8cc!important;
 }
 
 
-/* ДРУЗЬЯ — НЕ МЕНЯТЬ */
 
-body:has(.profile-head) .friends .b-user,
-body:has(.profile-head) .friends .cover{
-width:70px!important;
-height:70px!important;
-min-width:70px!important;
-max-width:70px!important;
-min-height:70px!important;
-max-height:70px!important;
-border-radius:50%!important;
-overflow:hidden!important;
-display:flex!important;
-align-items:center!important;
-justify-content:center!important;
-flex:0 0 70px!important;
-}
+/* ===========================
+   ДРУЗЬЯ ENTRY 222
+   =========================== */
 
 
-/* КЛУБЫ — ИСПРАВЛЕНИЕ ENTRY 221 */
-
-body:has(.profile-head) .clubs .b-club{
+body:has(.profile-head) .cc-friends .b-user.avatar{
 width:70px!important;
 height:70px!important;
 min-width:70px!important;
@@ -179,32 +180,84 @@ padding:0!important;
 margin:0!important;
 border-radius:50%!important;
 overflow:hidden!important;
-display:block!important;
-flex:none!important;
-aspect-ratio:1 / 1!important;
+box-sizing:border-box!important;
 }
 
-body:has(.profile-head) .clubs .b-club > a{
+
+body:has(.profile-head) .cc-friends .b-user.avatar > a.avatar{
+display:block!important;
 width:70px!important;
 height:70px!important;
-display:block!important;
-padding:0!important;
-margin:0!important;
 border-radius:50%!important;
 overflow:hidden!important;
 }
 
-body:has(.profile-head) .clubs .logo{
+
+body:has(.profile-head) .cc-friends .b-user.avatar img{
 width:70px!important;
 height:70px!important;
-min-width:70px!important;
-max-width:70px!important;
-min-height:70px!important;
-max-height:70px!important;
-display:block!important;
 object-fit:cover!important;
 border-radius:50%!important;
+display:block!important;
 }
+
+
+
+/* ===========================
+   КЛУБЫ ENTRY 222
+   =========================== */
+
+
+body:has(.profile-head) .b-clubs .b-club.avatar{
+width:70px!important;
+height:70px!important;
+min-width:70px!important;
+max-width:70px!important;
+min-height:70px!important;
+max-height:70px!important;
+padding:0!important;
+margin:0!important;
+border-radius:50%!important;
+overflow:hidden!important;
+box-sizing:border-box!important;
+}
+
+
+body:has(.profile-head) .b-clubs .b-club.avatar > a{
+display:block!important;
+width:70px!important;
+height:70px!important;
+border-radius:50%!important;
+overflow:hidden!important;
+}
+
+
+body:has(.profile-head) .b-clubs .b-club.avatar img.logo{
+width:70px!important;
+height:70px!important;
+object-fit:cover!important;
+object-position:center!important;
+border-radius:50%!important;
+display:block!important;
+}
+
+
+
+/* защита от растягивания Shikimori */
+
+body:has(.profile-head) .cc-friends,
+body:has(.profile-head) .b-clubs{
+display:flex!important;
+align-items:flex-start!important;
+gap:30px!important;
+}
+
+
+body:has(.profile-head) .cc-friends .b-user,
+body:has(.profile-head) .b-clubs .b-club{
+aspect-ratio:1/1!important;
+}
+
 
 
 /* блок кнопок */
@@ -221,6 +274,7 @@ backdrop-filter:blur(16px)!important;
 }
 
 
+
 /* сетки */
 
 body:has(.profile-head) .cc-2,
@@ -229,11 +283,13 @@ body:has(.profile-head) .cc-4{
 gap:30px!important;
 }
 
+
 body:has(.profile-head) .c-column,
 body:has(.profile-head) .b-catalog_entry,
 body:has(.profile-head) .b-user_rate{
 border-radius:24px!important;
 }
+
 
 
 @media(max-width:1100px){
@@ -243,6 +299,7 @@ flex-direction:column!important;
 align-items:center!important;
 padding:20px!important;
 }
+
 
 body:has(.profile-head) .c-brief,
 body:has(.profile-head) .c-history,
