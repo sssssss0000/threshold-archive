@@ -1,7 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 200
-ARCHITECTURE RESET
+ENTRY 201
 */
 
 body {
@@ -14,11 +13,6 @@ body {
     overflow-x:hidden!important;
 }
 
-html,
-body {
-    min-height:100%!important;
-}
-
 .l-page,
 #page {
     width:100%!important;
@@ -26,10 +20,6 @@ body {
     margin:0!important;
     padding:0!important;
     background:transparent!important;
-}
-
-.l-page {
-    position:relative!important;
 }
 
 .c-layout,
@@ -42,9 +32,6 @@ body {
     position:relative!important;
     width:100%!important;
     min-height:700px!important;
-    margin:0!important;
-    padding:0!important;
-    background:transparent!important;
 }
 
 .c-brief,
@@ -55,13 +42,6 @@ body {
 .b-stats_bar {
     border:none!important;
     box-shadow:none!important;
-    background:transparent!important;
-}
-
-.c-history {
-    position:absolute!important;
-    left:40px!important;
-    top:40px!important;
 }
 
 .c-brief {
@@ -71,6 +51,12 @@ body {
     transform:translateX(-50%)!important;
 }
 
+.c-history {
+    position:absolute!important;
+    left:40px!important;
+    top:40px!important;
+}
+
 .c-info {
     position:absolute!important;
     right:40px!important;
@@ -78,18 +64,37 @@ body {
 }
 
 .c-additionals,
-.c-lists-info {
+.c-lists-info,
+.b-stats_bar {
     background:rgba(5,8,14,.45)!important;
     backdrop-filter:blur(14px)!important;
     border-radius:28px!important;
 }
 
-.b-stats_bar {
-    position:relative!important;
-    margin-top:40px!important;
-    background:rgba(5,8,14,.45)!important;
-    backdrop-filter:blur(14px)!important;
+.avatar img {
+    max-width:280px!important;
+    width:280px!important;
+    height:280px!important;
+    object-fit:cover!important;
     border-radius:28px!important;
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.6)!important;
+}
+
+.aliases {
+    color:#edf4ff!important;
+    font-family:var(--font-alt)!important;
+    font-size:34px!important;
+    letter-spacing:.2em!important;
+    line-height:1.2!important;
+    max-width:420px!important;
+    text-align:center!important;
+}
+
+.notice {
+    color:#92a3ba!important;
+    text-align:center!important;
+    max-width:420px!important;
 }
 
 .subheadline {
@@ -103,32 +108,112 @@ body {
     text-transform:uppercase!important;
 }
 
-.avatar img {
-    border-radius:28px!important;
-    box-shadow:
-    0 20px 50px rgba(0,0,0,.6)!important;
+/* избранные персонажи */
+
+.favorite-characters,
+.c-characters,
+.cc-characters,
+.b-characters {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:20px!important;
 }
 
-.aliases {
-    font-family:var(--font-alt)!important;
-    color:#edf4ff!important;
-    font-size:34px!important;
-    letter-spacing:.2em!important;
-    line-height:1.2!important;
-    text-align:center!important;
+.favorite-characters img,
+.c-characters img,
+.cc-characters img,
+.b-characters img {
+    width:90px!important;
+    height:90px!important;
+    object-fit:cover!important;
+    border-radius:18px!important;
 }
 
-.notice {
-    color:#92a3ba!important;
-    text-align:center!important;
+/* достижения */
+
+.cc-achievements {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:20px!important;
 }
 
-.c-column,
-.b-catalog_entry,
-.b-user_rate,
-.cc-2 {
-    border-radius:24px!important;
+.b-achievement img {
+    width:100px!important;
+    height:100px!important;
+    object-fit:cover!important;
+    border-radius:20px!important;
 }
+
+/* франшизы */
+
+.cc-franchises {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:18px!important;
+}
+
+.cc-franchises img {
+    width:80px!important;
+    height:80px!important;
+    object-fit:cover!important;
+    border-radius:18px!important;
+}
+
+/* друзья */
+
+.friends,
+.cc-friends,
+.b-clubs {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:20px!important;
+}
+
+.friends img,
+.cc-friends img {
+    width:70px!important;
+    height:70px!important;
+    object-fit:cover!important;
+    border-radius:50%!important;
+}
+
+/* клубы */
+
+.b-clubs img,
+.cc-clubs img {
+    width:90px!important;
+    height:90px!important;
+    object-fit:cover!important;
+    border-radius:22px!important;
+}
+
+/* статистика */
+
+.b-stats_bar {
+    padding:20px!important;
+}
+
+.b-stats_bar .bar {
+    background:rgba(255,255,255,.08)!important;
+    border-radius:999px!important;
+    overflow:hidden!important;
+}
+
+.b-stats_bar .stat_name a {
+    color:#aab8cc!important;
+}
+
+.b-stats_bar .stat_name a:hover {
+    color:#fff!important;
+}
+
+/* комментарии */
+
+.b-comments {
+    width:100%!important;
+}
+
+/* мобильная версия */
 
 @media(max-width:1100px){
 
