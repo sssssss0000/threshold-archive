@@ -54,13 +54,11 @@ body:has(.profile-head) .c-brief {
     border-radius:32px!important;
 }
 
-body:has(.profile-head) .c-brief .avatar {
+body:has(.profile-head) .avatar {
     width:220px!important;
     height:220px!important;
-    display:flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    flex:none!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
 }
 
 body:has(.profile-head) .avatar img {
@@ -69,7 +67,6 @@ body:has(.profile-head) .avatar img {
     object-fit:cover!important;
     border-radius:32px!important;
     display:block!important;
-    margin:auto!important;
     box-shadow:
     0 25px 60px rgba(0,0,0,.7)!important;
 }
@@ -148,62 +145,67 @@ body:has(.profile-head) .b-stats_bar .stat_name a:hover {
     color:#fff!important;
 }
 
-/* друзья и клубы */
-body:has(.profile-head) .friends,
-body:has(.profile-head) .clubs {
-    align-items:flex-start!important;
-}
+/* Друзья */
 
 body:has(.profile-head) .friends .b-user,
-body:has(.profile-head) .clubs .b-club {
-    width:80px!important;
-    height:80px!important;
-    min-width:80px!important;
-    max-width:80px!important;
-    min-height:80px!important;
-    max-height:80px!important;
-    flex:none!important;
-    overflow:hidden!important;
-    border-radius:50%!important;
-    display:flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-}
-
-body:has(.profile-head) .friends .cover,
-body:has(.profile-head) .clubs .cover {
+body:has(.profile-head) .friends .cover {
     width:80px!important;
     height:80px!important;
     min-width:80px!important;
     min-height:80px!important;
-    max-width:80px!important;
-    max-height:80px!important;
+    aspect-ratio:1/1!important;
     border-radius:50%!important;
     overflow:hidden!important;
 }
 
 body:has(.profile-head) .friends img,
-body:has(.profile-head) .clubs img,
 body:has(.profile-head) .b-user.avatar img {
-    width:70px!important;
-    height:70px!important;
-    min-width:70px!important;
-    min-height:70px!important;
-    max-width:70px!important;
-    max-height:70px!important;
+    width:80px!important;
+    height:80px!important;
     object-fit:cover!important;
     border-radius:50%!important;
 }
 
-body:has(.profile-head) .friends .subheadline a,
-body:has(.profile-head) .clubs .subheadline a {
-    color:#edf4ff!important;
+/* Клубы приводим к системе друзей */
+
+body:has(.profile-head) .clubs .b-club,
+body:has(.profile-head) .clubs .cover {
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
+    aspect-ratio:1/1!important;
+    border-radius:50%!important;
+    overflow:hidden!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
 }
+
+body:has(.profile-head) .clubs img {
+    width:80px!important;
+    height:80px!important;
+    max-width:none!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    border-radius:50%!important;
+}
+
+/* Кнопки профиля */
+
+body:has(.profile-head) .profile-actions {
+    position:absolute!important;
+    top:480px!important;
+    left:50%!important;
+    transform:translateX(-50%)!important;
+}
+
+/* отступы */
 
 body:has(.profile-head) .cc-2,
 body:has(.profile-head) .cc-3,
 body:has(.profile-head) .cc-4 {
-    align-items:flex-start!important;
+    gap:30px!important;
 }
 
 body:has(.profile-head) .c-column,
