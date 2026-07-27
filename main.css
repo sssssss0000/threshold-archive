@@ -147,7 +147,9 @@ color:#aab8cc!important;
 }
 
 
-/* ДРУЗЬЯ */
+/*
+ДРУЗЬЯ
+*/
 
 body:has(.profile-head) .friends .b-user,
 body:has(.profile-head) .friends .cover{
@@ -165,34 +167,55 @@ justify-content:center!important;
 flex:0 0 70px!important;
 }
 
+body:has(.profile-head) .friends img{
+width:70px!important;
+height:70px!important;
+object-fit:cover!important;
+border-radius:50%!important;
+display:block!important;
+}
 
-/* КЛУБЫ FIX */
 
-body:has(.profile-head) .clubs .b-club.c-column.avatar{
+/*
+КЛУБЫ ENTRY 216
+РАБОТА ПО РЕАЛЬНОМУ HTML
+*/
+
+body:has(.profile-head) .b-clubs{
+display:flex!important;
+align-items:flex-start!important;
+gap:30px!important;
+}
+
+body:has(.profile-head) .b-clubs .b-club.c-colum.avatar{
+all:unset!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
 width:70px!important;
 height:70px!important;
 min-width:70px!important;
 max-width:70px!important;
 min-height:70px!important;
 max-height:70px!important;
-padding:0!important;
-margin:0!important;
-overflow:hidden!important;
-border-radius:50%!important;
-display:block!important;
-box-sizing:border-box!important;
 flex:0 0 70px!important;
+border-radius:50%!important;
+overflow:hidden!important;
+box-sizing:border-box!important;
 }
 
-body:has(.profile-head) .clubs .b-club.c-column.avatar > a{
+body:has(.profile-head) .b-clubs .b-club.c-colum.avatar>a{
+all:unset!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
 width:70px!important;
 height:70px!important;
-display:block!important;
-overflow:hidden!important;
 border-radius:50%!important;
+overflow:hidden!important;
 }
 
-body:has(.profile-head) .clubs .b-club.c-column.avatar img.logo{
+body:has(.profile-head) .b-clubs .b-club.c-colum.avatar img.logo{
 width:70px!important;
 height:70px!important;
 min-width:70px!important;
@@ -206,19 +229,9 @@ display:block!important;
 }
 
 
-/* изображения */
-
-body:has(.profile-head) .friends img,
-body:has(.profile-head) .b-user.avatar img{
-width:70px!important;
-height:70px!important;
-object-fit:cover!important;
-border-radius:50%!important;
-display:block!important;
-}
-
-
-/* стеклянный блок кнопок */
+/*
+стеклянный блок кнопок
+*/
 
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
@@ -232,7 +245,9 @@ backdrop-filter:blur(16px)!important;
 }
 
 
-/* сетки */
+/*
+сетки
+*/
 
 body:has(.profile-head) .cc-2,
 body:has(.profile-head) .cc-3,
