@@ -1,8 +1,9 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 106
+ENTRY 107
 CLEAN RESTORE 65
 */
+
 body {
     background:
     linear-gradient(
@@ -10,8 +11,9 @@ body {
         rgba(5,8,14,.35),
         rgba(5,8,14,.8)
     ),
-    url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg") center/cover fixed!important;
+    url("YOUR_BACKGROUND_IMAGE") center/cover fixed!important;
 }
+
 .l-page,
 #page,
 .profile-head,
@@ -28,85 +30,107 @@ body {
     border:none!important;
     box-shadow:none!important;
 }
+
 .profile-head {
-    display:grid!important;
-    grid-template-columns:minmax(220px,1fr) minmax(420px,520px) minmax(220px,1fr)!important;
-    gap:40px!important;
-    align-items:start!important;
+    display:block!important;
 }
+
 .c-brief {
     background:rgba(5,8,14,.45)!important;
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px)!important;
     border-radius:24px!important;
-    padding:20px 22px!important;
-    width:100%!important;
+    padding:22px!important;
     box-sizing:border-box!important;
+    width:430px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
 }
+
 .avatar {
-    display:flex!important;
-    justify-content:center!important;
+    text-align:center!important;
 }
+
 .avatar img {
     border-radius:24px!important;
-    box-shadow:0 15px 40px rgba(0,0,0,.55)!important;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.55)!important;
 }
+
 .head.misc {
     margin-top:15px!important;
 }
+
 .aliases {
     font-family:var(--font-alt)!important;
     color:#edf4ff!important;
     font-size:32px!important;
     letter-spacing:.18em!important;
-    white-space:nowrap!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow:visible!important;
+    text-align:center!important;
 }
+
 .notice {
     color:#92a3ba!important;
+    text-align:center!important;
+    overflow:visible!important;
 }
+
 .c-history {
     background:rgba(5,8,14,.45)!important;
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px)!important;
     border-radius:24px!important;
     padding:20px!important;
-    box-sizing:border-box!important;
+    opacity:1!important;
+    overflow:visible!important;
 }
+
 .c-info {
     margin-top:30px!important;
 }
+
 .c-lists-info,
 .c-additionals {
     background:rgba(5,8,14,.45)!important;
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px)!important;
     border-radius:24px!important;
     padding:20px!important;
-    box-sizing:border-box!important;
+    overflow:visible!important;
 }
+
 .subheadline {
     background:none!important;
     border:none!important;
 }
+
 .subheadline a {
     color:#edf4ff!important;
     letter-spacing:.2em!important;
-    text-transform:uppercase;
+    text-transform:uppercase!important;
 }
+
+.b-stats_bar {
+    background:rgba(5,8,14,.45)!important;
+    backdrop-filter:blur(14px)!important;
+    border-radius:24px!important;
+    padding:20px!important;
+}
+
 .b-stats_bar .bar {
     background:rgba(255,255,255,.08)!important;
     border-radius:999px!important;
     overflow:hidden!important;
 }
+
 .b-stats_bar .stat_name a {
     color:#aab8cc!important;
 }
+
 .b-stats_bar .stat_name a:hover {
     color:#fff!important;
 }
-.c-layout {
-    gap:40px!important;
-}
-.c-column {
-    margin:0!important;
-}
+
 .friends .b-user,
 .clubs .b-club {
     border-radius:18px!important;
