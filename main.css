@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 224
+ENTRY 225
 PROFILE RECONSTRUCTION
 */
 
@@ -181,132 +181,224 @@ color:#aab8cc!important;
 
 
 
-/* ДРУЗЬЯ */
 
-body:has(.profile-head) .cc-friends{
-display:flex!important;
-flex-wrap:wrap!important;
-align-items:flex-start!important;
-align-content:flex-start!important;
-gap:20px!important;
-width:100%!important;
-}
+/* ===========================
+   ДРУЗЬЯ ENTRY 222
+   =========================== */
 
 
 body:has(.profile-head) .cc-friends .b-user.avatar{
 width:70px!important;
 height:70px!important;
+
 min-width:70px!important;
 max-width:70px!important;
+
 min-height:70px!important;
 max-height:70px!important;
+
 padding:0!important;
 margin:0!important;
+
 border-radius:50%!important;
 overflow:hidden!important;
+
 box-sizing:border-box!important;
-flex:0 0 70px!important;
 }
+
 
 
 body:has(.profile-head) .cc-friends .b-user.avatar > a.avatar{
 display:block!important;
+
 width:70px!important;
 height:70px!important;
+
 border-radius:50%!important;
 overflow:hidden!important;
 }
+
 
 
 body:has(.profile-head) .cc-friends .b-user.avatar img{
 width:70px!important;
 height:70px!important;
+
 object-fit:cover!important;
+
 border-radius:50%!important;
+
 display:block!important;
 }
 
 
 
-/* КЛУБЫ */
+
+/* ===========================
+   КЛУБЫ ENTRY 225
+   СЕТКА 2x2
+   =========================== */
+
 
 body:has(.profile-head) .b-clubs{
-display:flex!important;
-flex-wrap:wrap!important;
-align-items:flex-start!important;
+
+display:grid!important;
+
+grid-template-columns:repeat(2,70px)!important;
+grid-template-rows:repeat(2,70px)!important;
+
 gap:30px!important;
+
+width:max-content!important;
+
 }
+
+
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
+
 width:70px!important;
 height:70px!important;
+
 min-width:70px!important;
 max-width:70px!important;
+
 min-height:70px!important;
 max-height:70px!important;
+
+
 padding:0!important;
 margin:0!important;
+
+
 border-radius:50%!important;
+
 overflow:hidden!important;
+
+display:flex!important;
+
+align-items:center!important;
+justify-content:center!important;
+
+
+aspect-ratio:1 / 1!important;
+
 box-sizing:border-box!important;
-flex:0 0 70px!important;
+
 }
+
+
+
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar > a{
+
 display:block!important;
+
 width:70px!important;
 height:70px!important;
+
 border-radius:50%!important;
+
 overflow:hidden!important;
+
 }
+
+
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar img.logo{
+
 width:70px!important;
 height:70px!important;
+
+
 object-fit:cover!important;
+
 object-position:center!important;
+
+
 border-radius:50%!important;
+
+
 display:block!important;
+
 }
 
 
 
-/* комментарии и текст */
 
-body:has(.profile-head) .comment,
-body:has(.profile-head) .comment .body,
-body:has(.profile-head) .b-message,
-body:has(.profile-head) .b-message .inner,
-body:has(.profile-head) .text{
+
+/* защита от старых правил Shikimori */
+
+body:has(.profile-head) .b-clubs .b-club.avatar,
+body:has(.profile-head) .b-clubs .b-club.avatar *,
+body:has(.profile-head) .b-clubs .b-club.avatar a{
+
+max-width:70px!important;
+
+max-height:70px!important;
+
+}
+
+
+
+
+/* ===========================
+   КОММЕНТАРИИ
+   =========================== */
+
+
+body:has(.profile-head) .b-comments,
+body:has(.profile-head) .b-comments .comment,
+body:has(.profile-head) .b-comments .body,
+body:has(.profile-head) .b-comments .body a{
+
 color:#edf4ff!important;
+
 }
+
+
 
 
 
 /* блок кнопок */
 
+
 body:has(.profile-head) .profile-actions{
+
 position:absolute!important;
-top:455px!important;
+
+top:510px!important;
+
 left:50%!important;
+
 transform:translateX(-50%)!important;
+
 padding:20px!important;
+
 border-radius:28px!important;
+
 background:rgba(5,8,14,.45)!important;
+
 backdrop-filter:blur(16px)!important;
+
 }
+
+
 
 
 
 /* сетки */
 
+
 body:has(.profile-head) .cc-2,
 body:has(.profile-head) .cc-3,
 body:has(.profile-head) .cc-4{
+
 gap:30px!important;
+
 }
 
 
@@ -314,25 +406,37 @@ gap:30px!important;
 body:has(.profile-head) .c-column,
 body:has(.profile-head) .b-catalog_entry,
 body:has(.profile-head) .b-user_rate{
+
 border-radius:24px!important;
+
 }
+
+
 
 
 
 @media(max-width:1100px){
 
 body:has(.profile-head) .profile-head{
+
 flex-direction:column!important;
+
 align-items:center!important;
+
 padding:20px!important;
+
 }
+
 
 
 body:has(.profile-head) .c-brief,
 body:has(.profile-head) .c-history,
 body:has(.profile-head) .c-info{
+
 width:90%!important;
+
 min-width:0!important;
+
 }
 
 }
