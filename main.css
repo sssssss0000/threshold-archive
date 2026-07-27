@@ -1,110 +1,69 @@
+
+
 /*
 THRESHOLD ARCHIVE
-ENTRY 68
-STRUCTURE LAYER
+ENTRY 72
+IDENTITY MODULE
 */
 
-#profiles_show{
-background:#05080e!important;
-background-image:
-linear-gradient(rgba(5,8,14,.58),rgba(5,8,14,.86)),
-url("https://sssssss0000.github.io/threshold-archive/assets/background.jpg")!important;
-background-size:cover!important;
-background-position:center!important;
-background-repeat:no-repeat!important;
-background-attachment:fixed!important;
-}
-
-.l-page,
-#page,
-.profile-head,
-.c-layout,
-.c-column,
-.c-profile,
-.c-brief,
-.c-info,
-.c-history,
-.c-additionals,
-.c-lists-info,
-.b-stats_bar{
-background:transparent!important;
-border:none!important;
-box-shadow:none!important;
-}
-
-.profile-head{
-display:flex!important;
-align-items:flex-start!important;
-gap:30px!important;
-}
-
 .c-brief{
-display:flex!important;
-background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
-border-radius:24px!important;
-padding:20px!important;
+    align-items:center!important;
+}
+
+.c-brief .head.misc{
+    padding-left:10px!important;
+}
+
+.c-brief .aliases{
+    font-family:var(--font-alt)!important;
+    font-size:34px!important;
+    font-weight:600!important;
+    letter-spacing:.22em!important;
+    color:#edf4ff!important;
+    text-transform:none!important;
+    margin-bottom:14px!important;
+}
+
+.c-brief .notice{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:5px!important;
+    color:#92a3ba!important;
+    letter-spacing:.12em!important;
+    text-transform:uppercase!important;
+    font-size:11px!important;
+}
+
+.c-brief .notice span{
+    display:block!important;
+}
+
+.avatar{
+    position:relative!important;
 }
 
 .avatar img{
-border-radius:24px!important;
+    border-radius:26px!important;
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.55),
+    0 0 30px rgba(170,200,255,.08)!important;
 }
 
-.head.misc{
-margin-top:15px!important;
+.profile-actions{
+    opacity:.45!important;
+    transition:.3s ease!important;
 }
 
-.aliases{
-font-family:var(--font-alt)!important;
-color:#edf4ff!important;
-font-size:32px!important;
-letter-spacing:.18em!important;
+.profile-actions:hover{
+    opacity:1!important;
 }
 
-.notice{
-color:#92a3ba!important;
-}
-
-.c-history{
-background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
-border-radius:24px!important;
-padding:20px!important;
-}
-
-.c-info{
-margin-top:30px!important;
-}
-
-.c-lists-info,
-.c-additionals{
-background:rgba(5,8,14,.35)!important;
-backdrop-filter:blur(12px);
-border-radius:24px!important;
-padding:20px!important;
-}
-
-.subheadline{
-background:none!important;
-border:none!important;
-}
-
-.subheadline a{
-color:#edf4ff!important;
-letter-spacing:.2em!important;
-text-transform:uppercase;
-}
-
-.b-stats_bar .bar{
-background:rgba(255,255,255,.08)!important;
-border-radius:999px!important;
-overflow:hidden!important;
-}
-
-.b-stats_bar .stat_name a{
-color:#aab8cc!important;
-}
-
-.b-stats_bar .stat_name a:hover{
-color:#fff!important;
+.head.misc:before{
+    content:"USER RECORD";
+    display:block;
+    color:rgba(200,220,255,.45);
+    font-size:10px;
+    letter-spacing:.35em;
+    margin-bottom:10px;
+    text-transform:uppercase;
 }
