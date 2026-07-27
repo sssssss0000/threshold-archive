@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 214
+ENTRY 215
 PROFILE RECONSTRUCTION
 */
 
@@ -60,7 +60,8 @@ height:220px!important;
 display:flex!important;
 justify-content:center!important;
 align-items:center!important;
-margin:0 auto!important;
+margin-left:auto!important;
+margin-right:auto!important;
 }
 
 body:has(.profile-head) .avatar img{
@@ -146,84 +147,70 @@ color:#aab8cc!important;
 }
 
 
-/* Друзья ENTRY 213 */
+/* ДРУЗЬЯ */
 
 body:has(.profile-head) .friends .b-user,
 body:has(.profile-head) .friends .cover{
-width:64px!important;
-height:64px!important;
-min-width:64px!important;
-max-width:64px!important;
-min-height:64px!important;
-max-height:64px!important;
-flex:0 0 64px!important;
+width:70px!important;
+height:70px!important;
+min-width:70px!important;
+max-width:70px!important;
+min-height:70px!important;
+max-height:70px!important;
+aspect-ratio:1/1!important;
 border-radius:50%!important;
 overflow:hidden!important;
 display:flex!important;
 align-items:center!important;
 justify-content:center!important;
+flex:0 0 70px!important;
 }
 
 
-/* Клубы ENTRY 213 */
+/* КЛУБЫ - ПОЛНАЯ СИНХРОНИЗАЦИЯ С ДРУЗЬЯМИ */
 
-body:has(.profile-head) .clubs{
-display:flex!important;
-flex-wrap:wrap!important;
-align-items:flex-start!important;
-gap:30px!important;
-}
-
-body:has(.profile-head) .clubs .b-club{
-position:relative!important;
-width:64px!important;
-height:64px!important;
-min-width:64px!important;
-max-width:64px!important;
-min-height:64px!important;
-max-height:64px!important;
-padding:0!important;
-margin:0!important;
-flex:0 0 64px!important;
-overflow:hidden!important;
-border-radius:50%!important;
-}
-
-body:has(.profile-head) .clubs .b-club>a{
-display:block!important;
-width:64px!important;
-height:64px!important;
-padding:0!important;
-margin:0!important;
-border-radius:50%!important;
-overflow:hidden!important;
-}
-
+body:has(.profile-head) .clubs .b-club,
 body:has(.profile-head) .clubs .cover,
 body:has(.profile-head) .clubs .image,
 body:has(.profile-head) .clubs .logo,
-body:has(.profile-head) .clubs .avatar{
-position:absolute!important;
-inset:0!important;
-width:64px!important;
-height:64px!important;
-min-width:64px!important;
-max-width:64px!important;
-min-height:64px!important;
-max-height:64px!important;
+body:has(.profile-head) .clubs .avatar,
+body:has(.profile-head) .clubs .b-club>a{
+width:70px!important;
+height:70px!important;
+min-width:70px!important;
+max-width:70px!important;
+min-height:70px!important;
+max-height:70px!important;
+aspect-ratio:1/1!important;
+border-radius:50%!important;
+overflow:hidden!important;
+padding:0!important;
+margin:0!important;
+display:flex!important;
+align-items:center!important;
+justify-content:center!important;
+flex:0 0 70px!important;
+box-sizing:border-box!important;
+}
+
+
+body:has(.profile-head) .clubs .b-club *{
+max-width:70px!important;
+max-height:70px!important;
 border-radius:50%!important;
 overflow:hidden!important;
 }
+
 
 body:has(.profile-head) .friends img,
 body:has(.profile-head) .clubs img,
 body:has(.profile-head) .b-user.avatar img{
-width:64px!important;
-height:64px!important;
-min-width:64px!important;
-max-width:64px!important;
-min-height:64px!important;
-max-height:64px!important;
+width:70px!important;
+height:70px!important;
+min-width:70px!important;
+max-width:70px!important;
+min-height:70px!important;
+max-height:70px!important;
 object-fit:cover!important;
 object-position:center!important;
 border-radius:50%!important;
@@ -231,7 +218,7 @@ display:block!important;
 }
 
 
-/* блок кнопок */
+/* стеклянный блок кнопок */
 
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
