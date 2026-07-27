@@ -1,6 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 216
+ENTRY 218
 PROFILE RECONSTRUCTION
 */
 
@@ -148,37 +148,51 @@ color:#aab8cc!important;
 
 
 /*
-ДРУЗЬЯ
+ДРУЗЬЯ ENTRY 218
+ОТДЕЛЬНАЯ ФИКСАЦИЯ
 */
 
 body:has(.profile-head) .friends .b-user,
 body:has(.profile-head) .friends .cover{
-width:70px!important;
-height:70px!important;
-min-width:70px!important;
-max-width:70px!important;
-min-height:70px!important;
-max-height:70px!important;
+width:60px!important;
+height:60px!important;
+min-width:60px!important;
+max-width:60px!important;
+min-height:60px!important;
+max-height:60px!important;
 border-radius:50%!important;
 overflow:hidden!important;
 display:flex!important;
 align-items:center!important;
 justify-content:center!important;
-flex:0 0 70px!important;
+flex:0 0 60px!important;
+box-sizing:border-box!important;
+}
+
+body:has(.profile-head) .friends .b-user.avatar{
+width:60px!important;
+height:60px!important;
+border-radius:50%!important;
+overflow:hidden!important;
 }
 
 body:has(.profile-head) .friends img{
-width:70px!important;
-height:70px!important;
+width:60px!important;
+height:60px!important;
+min-width:60px!important;
+max-width:60px!important;
+min-height:60px!important;
+max-height:60px!important;
 object-fit:cover!important;
+object-position:center!important;
 border-radius:50%!important;
 display:block!important;
 }
 
 
 /*
-КЛУБЫ ENTRY 216
-РАБОТА ПО РЕАЛЬНОМУ HTML
+КЛУБЫ ENTRY 218
+ОСТАВЛЯЕМ РАБОЧУЮ ВЕРСИЮ
 */
 
 body:has(.profile-head) .b-clubs{
@@ -230,7 +244,7 @@ display:block!important;
 
 
 /*
-стеклянный блок кнопок
+СТЕКЛЯННЫЙ БЛОК КНОПОК
 */
 
 body:has(.profile-head) .profile-actions{
@@ -246,7 +260,7 @@ backdrop-filter:blur(16px)!important;
 
 
 /*
-сетки
+СЕТКИ
 */
 
 body:has(.profile-head) .cc-2,
