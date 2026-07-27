@@ -1,7 +1,6 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 107
-CLEAN RESTORE 65
+ENTRY 108
 */
 
 .l-page,
@@ -23,6 +22,13 @@ CLEAN RESTORE 65
 
 body {
     overflow-x:hidden!important;
+    background:
+    linear-gradient(
+        180deg,
+        rgba(5,8,14,.35),
+        rgba(5,8,14,.8)
+    ),
+    url("YOUR_BACKGROUND_IMAGE") center/cover fixed!important;
 }
 
 .profile-head {
@@ -36,7 +42,7 @@ body {
     left:50%!important;
     top:20px!important;
     transform:translateX(-50%)!important;
-    width:420px!important;
+    width:390px!important;
     display:flex!important;
     flex-direction:column!important;
     align-items:center!important;
@@ -44,8 +50,15 @@ body {
     background:rgba(5,8,14,.45)!important;
     backdrop-filter:blur(14px)!important;
     border-radius:28px!important;
-    padding:25px!important;
+    padding:25px 20px!important;
+    box-sizing:border-box!important;
     z-index:5!important;
+}
+
+.avatar {
+    display:flex!important;
+    justify-content:center!important;
+    width:100%!important;
 }
 
 .avatar img {
@@ -57,6 +70,7 @@ body {
 .head.misc {
     margin-top:20px!important;
     text-align:center!important;
+    width:100%!important;
 }
 
 .aliases {
@@ -95,7 +109,7 @@ body {
 
 .c-info {
     position:absolute!important;
-    right:40px!important;
+    right:80px!important;
     top:20px!important;
     width:320px!important;
     margin:0!important;
