@@ -1,8 +1,9 @@
 /*
 THRESHOLD ARCHIVE
-ENTRY 222
+ENTRY 223
 PROFILE RECONSTRUCTION
 */
+
 
 body:has(.profile-head){
 background:
@@ -14,12 +15,14 @@ url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets
 overflow-x:hidden!important;
 }
 
+
 body:has(.profile-head) .l-page,
 body:has(.profile-head) #page{
 background:transparent!important;
 width:100%!important;
 max-width:none!important;
 }
+
 
 body:has(.profile-head) .c-layout,
 body:has(.profile-head) .c-column,
@@ -28,6 +31,11 @@ background:transparent!important;
 border:none!important;
 box-shadow:none!important;
 }
+
+
+/* ===========================
+   ОСНОВНАЯ АРХИТЕКТУРА
+=========================== */
 
 
 body:has(.profile-head) .profile-head{
@@ -105,7 +113,6 @@ body:has(.profile-head) .notice{
 color:#92a3ba!important;
 margin-top:15px!important;
 line-height:1.5!important;
-white-space:normal!important;
 text-align:center!important;
 }
 
@@ -141,41 +148,18 @@ margin-bottom:25px!important;
 }
 
 
-body:has(.profile-head) .subheadline,
-body:has(.profile-head) .subheadline a{
-background:none!important;
-border:none!important;
-color:#edf4ff!important;
-letter-spacing:.2em!important;
-text-transform:uppercase!important;
-}
-
-
-body:has(.profile-head) .b-stats_bar .bar{
-background:rgba(255,255,255,.08)!important;
-border-radius:999px!important;
-overflow:hidden!important;
-}
-
-
-body:has(.profile-head) .b-stats_bar .stat_name a{
-color:#aab8cc!important;
-}
-
-
-
 /* ===========================
-   ДРУЗЬЯ ENTRY 222
-   =========================== */
+   ДРУЗЬЯ ENTRY 223
+=========================== */
 
 
 body:has(.profile-head) .cc-friends .b-user.avatar{
-width:70px!important;
-height:70px!important;
-min-width:70px!important;
-max-width:70px!important;
-min-height:70px!important;
-max-height:70px!important;
+width:60px!important;
+height:60px!important;
+min-width:60px!important;
+max-width:60px!important;
+min-height:60px!important;
+max-height:60px!important;
 padding:0!important;
 margin:0!important;
 border-radius:50%!important;
@@ -186,16 +170,16 @@ box-sizing:border-box!important;
 
 body:has(.profile-head) .cc-friends .b-user.avatar > a.avatar{
 display:block!important;
-width:70px!important;
-height:70px!important;
+width:60px!important;
+height:60px!important;
 border-radius:50%!important;
 overflow:hidden!important;
 }
 
 
 body:has(.profile-head) .cc-friends .b-user.avatar img{
-width:70px!important;
-height:70px!important;
+width:60px!important;
+height:60px!important;
 object-fit:cover!important;
 border-radius:50%!important;
 display:block!important;
@@ -204,8 +188,18 @@ display:block!important;
 
 
 /* ===========================
-   КЛУБЫ ENTRY 222
-   =========================== */
+   КЛУБЫ ENTRY 223
+=========================== */
+
+
+body:has(.profile-head) .b-clubs.one-line{
+width:100%!important;
+max-width:100%!important;
+overflow:hidden!important;
+display:flex!important;
+align-items:flex-start!important;
+gap:30px!important;
+}
 
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
@@ -220,6 +214,7 @@ margin:0!important;
 border-radius:50%!important;
 overflow:hidden!important;
 box-sizing:border-box!important;
+flex:0 0 70px!important;
 }
 
 
@@ -242,29 +237,22 @@ display:block!important;
 }
 
 
+/* убрать лишние клубы */
 
-/* защита от растягивания Shikimori */
-
-body:has(.profile-head) .cc-friends,
-body:has(.profile-head) .b-clubs{
-display:flex!important;
-align-items:flex-start!important;
-gap:30px!important;
-}
-
-
-body:has(.profile-head) .cc-friends .b-user,
-body:has(.profile-head) .b-clubs .b-club{
-aspect-ratio:1/1!important;
+body:has(.profile-head) .b-clubs .b-club:nth-child(n+5){
+display:none!important;
 }
 
 
 
-/* блок кнопок */
+/* ===========================
+   КНОПКИ
+=========================== */
+
 
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
-top:510px!important;
+top:430px!important;
 left:50%!important;
 transform:translateX(-50%)!important;
 padding:20px!important;
@@ -275,7 +263,38 @@ backdrop-filter:blur(16px)!important;
 
 
 
-/* сетки */
+/* ===========================
+   КОММЕНТАРИИ
+=========================== */
+
+
+body:has(.profile-head) .comment,
+body:has(.profile-head) .comment .body,
+body:has(.profile-head) .b-comment,
+body:has(.profile-head) .b-comment .body{
+color:#edf4ff!important;
+}
+
+
+body:has(.profile-head) .comment a,
+body:has(.profile-head) .b-comment a{
+color:#9fc7ff!important;
+}
+
+
+
+/* ===========================
+   СЕТКИ
+=========================== */
+
+
+body:has(.profile-head) .cc-friends,
+body:has(.profile-head) .b-clubs{
+display:flex!important;
+align-items:flex-start!important;
+gap:30px!important;
+}
+
 
 body:has(.profile-head) .cc-2,
 body:has(.profile-head) .cc-3,
