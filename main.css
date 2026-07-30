@@ -1,9 +1,6 @@
 body:has(.profile-head){
 background:
-linear-gradient(
-rgba(3,6,12,.55),
-rgba(3,6,12,.75)
-),
+linear-gradient(rgba(3,6,12,.55),rgba(3,6,12,.75)),
 url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg") center/cover fixed no-repeat!important;
 overflow-x:hidden!important;
 }
@@ -54,13 +51,13 @@ justify-content:center!important;
 align-items:center!important;
 }
 
-body:has(.profile-head) .c-brief > .avatar{
+body:has(.profile-head) .c-brief>.avatar{
 width:220px!important;
 height:220px!important;
 margin:0 auto!important;
 }
 
-body:has(.profile-head) .c-brief > .avatar img{
+body:has(.profile-head) .c-brief>.avatar img{
 width:220px!important;
 height:220px!important;
 object-fit:cover!important;
@@ -165,7 +162,7 @@ overflow:hidden!important;
 box-sizing:border-box!important;
 }
 
-body:has(.profile-head) .cc-friends .b-user.avatar > a.avatar{
+body:has(.profile-head) .cc-friends .b-user.avatar>a.avatar{
 display:block!important;
 width:70px!important;
 height:70px!important;
@@ -180,13 +177,13 @@ object-fit:cover!important;
 border-radius:50%!important;
 display:block!important;
 }
-
 body:has(.profile-head) .b-clubs{
 display:grid!important;
 grid-template-columns:repeat(2,70px)!important;
 grid-template-rows:repeat(2,70px)!important;
 gap:20px!important;
 width:max-content!important;
+margin-left:40px!important;
 }
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
@@ -204,10 +201,10 @@ display:flex!important;
 align-items:center!important;
 justify-content:center!important;
 box-sizing:border-box!important;
-aspect-ratio:1 / 1!important;
+aspect-ratio:1/1!important;
 }
 
-body:has(.profile-head) .b-clubs .b-club.avatar > a{
+body:has(.profile-head) .b-clubs .b-club.avatar>a{
 display:block!important;
 width:70px!important;
 height:70px!important;
@@ -222,6 +219,24 @@ object-fit:cover!important;
 object-position:center!important;
 border-radius:50%!important;
 display:block!important;
+}
+
+body:has(.profile-head) .b-clubs .b-club.avatar,
+body:has(.profile-head) .b-clubs .b-club.avatar *,
+body:has(.profile-head) .b-clubs .b-club.avatar a{
+max-width:70px!important;
+max-height:70px!important;
+}
+
+body:has(.profile-head) .profile-actions{
+position:absolute!important;
+top:330px!important;
+left:50%!important;
+transform:translateX(-50%)!important;
+padding:0!important;
+background:transparent!important;
+backdrop-filter:none!important;
+border:none!important;
 }
 
 body:has(.profile-head) .b-comments,
@@ -241,20 +256,13 @@ body:has(.profile-head) .b-comment a{
 color:#b9d7ff!important;
 }
 
-body:has(.profile-head) .profile-actions{
-position:absolute!important;
-top:360px!important;
-left:50%!important;
-transform:translateX(-50%)!important;
-padding:20px!important;
-border-radius:28px!important;
-background:rgba(5,8,14,.45)!important;
-backdrop-filter:blur(16px)!important;
-}
-
 body:has(.profile-head) .cc-friends .b-user.avatar,
 body:has(.profile-head) .cc-friends .b-user.avatar *,
-body:has(.profile-head) .cc-friends .b-user.avatar a.avatar,
+body:has(.profile-head) .cc-friends .b-user.avatar a.avatar{
+max-width:70px!important;
+max-height:70px!important;
+}
+
 body:has(.profile-head) .b-clubs .b-club.avatar,
 body:has(.profile-head) .b-clubs .b-club.avatar *,
 body:has(.profile-head) .b-clubs .b-club.avatar a{
