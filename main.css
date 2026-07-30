@@ -382,5 +382,5 @@ display:none!important;
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a,
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a,
 #profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
-transform:translateX(10px)!important;
+transform:translateX(20px)!important;
 }
