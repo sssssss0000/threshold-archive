@@ -393,3 +393,17 @@ transform:translateX(5px)!important;
 #profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
 transform:translateX(40px)!important;
 }
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+text-align:center!important;
+}
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline > a{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+width:100%!important;
+text-align:center!important;
+}
