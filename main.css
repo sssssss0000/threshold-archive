@@ -341,3 +341,20 @@ body:has(.profile-head) .profile-actions a span{
 text-align:center!important;
 width:100%!important;
 }
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a,
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+width:100%!important;
+text-align:center!important;
+position:relative!important;
+}
+
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a .arrow,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a .arrow,
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a .arrow{
+display:none!important;
+}
