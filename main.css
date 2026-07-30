@@ -335,6 +335,10 @@ display:flex!important;
 justify-content:center!important;
 align-items:center!important;
 gap:15px!important;
+position:absolute!important;
+top:345px!important;
+left:50%!important;
+transform:translateX(-50%)!important;
 }
 
 body:has(.profile-head) .profile-actions .b-button span,
@@ -357,16 +361,14 @@ position:relative!important;
 
 
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a::before,
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a::before,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a::before,
 #profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a::before{
 display:none!important;
 content:none!important;
 }
 
 
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline,
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline,
-#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline{
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline{
 display:flex!important;
 justify-content:center!important;
 align-items:center!important;
@@ -374,48 +376,45 @@ text-align:center!important;
 }
 
 
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a .arrow,
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a .arrow,
-#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a .arrow{
-display:none!important;
-}
-/* избранное */
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a{
-transform:translateX(15px)!important;
-}
-
-/* клубы */
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline{
-transform:translateX(5px)!important;
-}
-
-/* достижения */
-#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
-transform:translateX(40px)!important;
-}
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline{
-display:flex!important;
-justify-content:center!important;
-align-items:center!important;
-text-align:center!important;
-}
-
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline > a{
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline > a{
 display:flex!important;
 justify-content:center!important;
 align-items:center!important;
 width:100%!important;
 text-align:center!important;
-}
-#profiles_show > section > div > div.profile-head > div.c-brief,
-#profiles_show > section > div > div.profile-head > div.c-info,
-#profiles_show > section > div > div.profile-head > div.c-history.x2{
-transform:translateY(-30px)!important;
+transform:translateX(30px)!important;
 }
 
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a .arrow,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a .arrow,
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a .arrow{
+display:none!important;
+}
+
+
+/* избранное */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a{
+transform:translateX(15px)!important;
+}
+
+
+/* клубы */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline{
+transform:translateX(5px)!important;
+}
+
+
+/* достижения */
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
+transform:translateX(40px)!important;
+}
+
+
+/* верхние блоки */
+#profiles_show > section > div > div.profile-head > div.c-brief,
+#profiles_show > section > div > div.profile-head > div.c-info,
+#profiles_show > section > div > div.profile-head > div.c-history.x2,
 #profiles_show > section > div > div.profile-head > div.c-brief > div > div{
 transform:translateY(-30px)!important;
-}
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline > a{
-transform:translateX(30px)!important;
 }
