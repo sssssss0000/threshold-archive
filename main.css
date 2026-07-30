@@ -338,10 +338,15 @@ display:flex!important;
 justify-content:center!important;
 align-items:center!important;
 gap:15px!important;
+
 position:absolute!important;
+
 top:390px!important;
-left:40%!important;
-transform:translateX(-50%)!important;
+left:50%!important;
+
+transform:none!important;
+
+z-index:10!important;
 }
 
 body:has(.profile-head) .profile-actions .b-button span,
