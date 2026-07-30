@@ -183,7 +183,7 @@ grid-template-columns:repeat(2,70px)!important;
 grid-template-rows:repeat(2,70px)!important;
 gap:20px!important;
 width:max-content!important;
-margin-left:100px!important;
+margin-left:120px!important;
 }
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
@@ -250,7 +250,7 @@ grid-row:2!important;
 
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
-top:345px!important;
+top:355px!important;
 left:50%!important;
 transform:translateX(-50%)!important;
 padding:0!important;
