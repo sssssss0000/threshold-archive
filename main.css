@@ -407,3 +407,12 @@ align-items:center!important;
 width:100%!important;
 text-align:center!important;
 }
+#profiles_show > section > div > div.profile-head > div.c-brief,
+#profiles_show > section > div > div.profile-head > div.c-info,
+#profiles_show > section > div > div.profile-head > div.c-history.x2{
+transform:translateY(-30px)!important;
+}
+
+#profiles_show > section > div > div.profile-head > div.c-brief > div > div{
+transform:translateY(-30px)!important;
+}
