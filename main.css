@@ -316,6 +316,7 @@ width:90%!important;
 min-width:0!important;
 }
 }
+
 body:has(.profile-head) .profile-actions .b-button .arrow,
 body:has(.profile-head) .profile-actions .arrow{
 display:none!important;
@@ -341,8 +342,10 @@ body:has(.profile-head) .profile-actions a span{
 text-align:center!important;
 width:100%!important;
 }
+
+
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a,
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a,
 #profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a{
 display:flex!important;
 justify-content:center!important;
@@ -350,6 +353,24 @@ align-items:center!important;
 width:100%!important;
 text-align:center!important;
 position:relative!important;
+}
+
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline > a::before,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a::before,
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline > a::before{
+display:none!important;
+content:none!important;
+}
+
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.block > div.subheadline,
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline,
+#profiles_show > section > div > div.profile-content > div.block.achievements > div.subheadline{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+text-align:center!important;
 }
 
 
