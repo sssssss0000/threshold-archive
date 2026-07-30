@@ -316,3 +316,28 @@ width:90%!important;
 min-width:0!important;
 }
 }
+body:has(.profile-head) .profile-actions .b-button .arrow,
+body:has(.profile-head) .profile-actions .arrow{
+display:none!important;
+}
+
+body:has(.profile-head) .profile-actions .b-button,
+body:has(.profile-head) .profile-actions a{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+text-align:center!important;
+}
+
+body:has(.profile-head) .profile-actions{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+gap:15px!important;
+}
+
+body:has(.profile-head) .profile-actions .b-button span,
+body:has(.profile-head) .profile-actions a span{
+text-align:center!important;
+width:100%!important;
+}
