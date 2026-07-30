@@ -250,7 +250,7 @@ grid-row:2!important;
 
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
-top:355px!important;
+top:390px!important;
 left:50%!important;
 transform:translateX(-50%)!important;
 padding:0!important;
@@ -417,5 +417,5 @@ transform:translateY(-30px)!important;
 transform:translateY(-30px)!important;
 }
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline > a{
-transform:translateX(20px)!important;
+transform:translateX(30px)!important;
 }
