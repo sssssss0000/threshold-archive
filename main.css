@@ -249,14 +249,17 @@ grid-row:2!important;
 }
 
 body:has(.profile-head) .profile-actions{
+display:flex!important;
+justify-content:center!important;
+align-items:center!important;
+gap:15px!important;
+
 position:absolute!important;
-top:390px!important;
-left:50%!important;
-transform:translateX(-50%)!important;
-padding:0!important;
-background:transparent!important;
-backdrop-filter:none!important;
-border:none!important;
+
+top:380px!important;
+left:30%!important;
+
+transform:translate(-50%,0)!important;
 }
 
 body:has(.profile-head) .b-comments,
@@ -417,4 +420,8 @@ transform:translateX(40px)!important;
 #profiles_show > section > div > div.profile-head > div.c-history.x2,
 #profiles_show > section > div > div.profile-head > div.c-brief > div > div{
 transform:translateY(-30px)!important;
+}
+/* друзья - отдельное смещение заголовка */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline{
+transform:translateX(30px)!important;
 }
