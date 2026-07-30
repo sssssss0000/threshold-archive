@@ -183,7 +183,7 @@ grid-template-columns:repeat(2,70px)!important;
 grid-template-rows:repeat(2,70px)!important;
 gap:20px!important;
 width:max-content!important;
-margin-left:40px!important;
+margin-left:100px!important;
 }
 
 body:has(.profile-head) .b-clubs .b-club.avatar{
@@ -228,9 +228,29 @@ max-width:70px!important;
 max-height:70px!important;
 }
 
+body:has(.profile-head) .b-clubs .b-club:nth-child(1){
+grid-column:1!important;
+grid-row:1!important;
+}
+
+body:has(.profile-head) .b-clubs .b-club:nth-child(2){
+grid-column:2!important;
+grid-row:1!important;
+}
+
+body:has(.profile-head) .b-clubs .b-club:nth-child(3){
+grid-column:1!important;
+grid-row:2!important;
+}
+
+body:has(.profile-head) .b-clubs .b-club:nth-child(4){
+grid-column:2!important;
+grid-row:2!important;
+}
+
 body:has(.profile-head) .profile-actions{
 position:absolute!important;
-top:330px!important;
+top:345px!important;
 left:50%!important;
 transform:translateX(-50%)!important;
 padding:0!important;
