@@ -434,12 +434,13 @@ border:none!important;
 box-shadow:none!important;
 }
 
-/* рамка клубы */
+/* принудительный стеклянный фон клубов */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2),
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > .block,
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2){
 background:rgba(5,8,14,.45)!important;
 backdrop-filter:blur(16px)!important;
 border-radius:32px!important;
-padding:25px!important;
 border:none!important;
 box-shadow:none!important;
 }
