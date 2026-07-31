@@ -141,11 +141,13 @@ color:#aab8cc!important;
 }
 
 body:has(.profile-head) .cc-friends{
-display:grid!important;
-grid-template-columns:repeat(5,70px)!important;
-grid-template-rows:repeat(2,70px)!important;
+display:flex!important;
+flex-wrap:wrap!important;
+justify-content:center!important;
+align-items:center!important;
 gap:20px!important;
-width:max-content!important;
+width:100%!important;
+max-width:100%!important;
 }
 
 body:has(.profile-head) .cc-friends .b-user.avatar{
