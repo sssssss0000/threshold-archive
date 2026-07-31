@@ -248,20 +248,6 @@ grid-column:2!important;
 grid-row:2!important;
 }
 
-body:has(.profile-head) .profile-actions{
-display:flex!important;
-justify-content:center!important;
-align-items:center!important;
-gap:15px!important;
-
-position:absolute!important;
-
-top:360px!important;
-left:0%!important;
-
-transform:translate(-50%,0)!important;
-}
-
 body:has(.profile-head) .b-comments,
 body:has(.profile-head) .b-comments *,
 body:has(.profile-head) .comment,
