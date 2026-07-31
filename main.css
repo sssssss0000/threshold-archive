@@ -408,8 +408,13 @@ transform:translateX(15px)!important;
 
 
 /* клубы */
-#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline{
-transform:translateX(5px)!important;
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline{
+transform:translateX(45px)!important;
+}
+
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2) > div.subheadline > a::before{
+display:none!important;
+content:none!important;
 }
 
 
