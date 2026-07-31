@@ -421,12 +421,12 @@ transform:translateY(-30px)!important;
 }
 /* друзья - отдельное смещение заголовка */
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1) > div.subheadline{
-transform:translateX(150px)!important;
+transform:translateX(130px)!important;
 }
 
-/* друзья */
+/* друзья рамка */
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1),
-/* клубы */
+/* клубы рамка*/
 #profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c.right > div.cc-2a.m30 > div:nth-child(2){
 background:rgba(5,8,14,.45)!important;
 backdrop-filter:blur(16px)!important;
