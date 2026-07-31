@@ -444,3 +444,26 @@ border-radius:32px!important;
 border:none!important;
 box-shadow:none!important;
 }
+
+/* перенос клубов и друзей в верхний блок */
+#profiles_show > section > div{
+position:relative!important;
+}
+
+
+/* клубы - левее истории */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(2){
+position:absolute!important;
+top:40px!important;
+right:calc(50% + 220px)!important;
+z-index:5!important;
+}
+
+
+/* друзья - правее списка аниме и активности */
+#profiles_show > section > div > div.profile-content > div.cc-2.block > div.c-column.c-right > div.cc-2a.m30 > div:nth-child(1){
+position:absolute!important;
+top:40px!important;
+left:calc(50% + 260px)!important;
+z-index:5!important;
+}
