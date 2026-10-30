@@ -1,13 +1,9 @@
 body:has(.profile-head) {
-background-color: #03060c !important;
-background-image:
-linear-gradient(rgba(3,6,12,.55), rgba(3,6,12,.75)),
-url("https://imgtree.co/direct/0agFhcEh.jpg") !important;
-background-position: center center, center center !important;
-background-size: cover, cover !important;
-background-repeat: no-repeat, no-repeat !important;
-background-attachment: fixed, fixed !important;
-overflow-x: hidden !important;
+  background-image: url("https://imgtree.co/direct/0agFhcEh.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 body:has(.profile-head) .l-page,
