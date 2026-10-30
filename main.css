@@ -1,7 +1,7 @@
 body:has(.profile-head){
 background:
 linear-gradient(rgba(3,6,12,.55),rgba(3,6,12,.75)),
-url("https://imgtree.co/direct/0agFhcEh.jpg") center/cover fixed no-repeat!important;
+url("https://raw.githubusercontent.com/sssssss0000/threshold-archive/main/assets/background.jpg") center/cover fixed no-repeat!important;
 overflow-x:hidden!important;
 }
 
