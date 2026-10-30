@@ -8,6 +8,7 @@ background-size: cover, cover !important;
 background-repeat: no-repeat, no-repeat !important;
 background-attachment: fixed, fixed !important;
 overflow-x: hidden !important;
+}
 
 body:has(.profile-head) .l-page,
 body:has(.profile-head) #page{
