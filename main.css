@@ -1,9 +1,9 @@
 body:has(.profile-head) {
-  background-image: url("https://imgtree.co/direct/0agFhcEh.jpg") !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+background-image: url("https://imgtree.co/direct/0agFhcEh.jpg") !important;
+background-position: center center !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed !important;
 }
 
 body:has(.profile-head) .l-page,
